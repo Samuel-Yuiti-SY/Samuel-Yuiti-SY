@@ -1,16 +1,56 @@
-## Hi there 👋
+<h1 align="center">Samuel Yuiti Endo Silva</h1>
 
-<!--
-**Samuel-Yuiti-SY/Samuel-Yuiti-SY** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+Backend developer focused on financial data processing, reconciliation systems and ERP integrations.
+</p>
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=python" height="60" alt="python logo" />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=postgres" height="60" alt="postgresql logo" />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=git" height="60" alt="git logo" />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=github" height="60" alt="github logo" />
+</div>
+
+---
+
+<div align="center">
+  <a href="https://www.linkedin.com/in/samuelyuiti/" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&color=0077B5&logoColor=white&style=for-the-badge" height="25" />
+  </a>
+</div>
+
+---
+
+## What I do
+
+- Financial data processing and normalization  
+- Reconciliation analysis between ERP and external sources  
+- Troubleshooting production issues in financial systems  
+- SQL-based data validation and investigation  
+- Development of file parsers (bank statements and operator layouts)  
+
+---
+
+## Technical Context
+
+- Experience with reconciliation platforms and ERP integrations  
+- Handling inconsistencies in payment operator files  
+- Investigating transactional data issues in production environments  
+- Supporting high-demand systems with SLA constraints  
+
+---
+
+## Current Focus
+
+- Automation of reconciliation processes  
+- Financial data standardization  
+- Scalable pipelines for data ingestion and validation  
+
+---
+
+## Projects
