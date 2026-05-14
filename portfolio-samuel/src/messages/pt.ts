@@ -21,11 +21,10 @@ export const pt = {
   },
   hero: {
     status: "Disponível para oportunidades e projetos",
-    title:
-      "Desenvolvo soluções com Python, SQL e tecnologia web para transformar dados financeiros em processos mais claros, rápidos e confiáveis.",
+    title: "Desenvolvedor Python, SQL e Automação Financeira",
     subtitle:
-      "Atuo com análise de dados, automação, tratamento de arquivos, consultas SQL e desenvolvimento de interfaces modernas para resolver problemas operacionais reais.",
-    role: "Desenvolvedor Python | SQL | Dados Financeiros | Automação",
+      "Construo soluções para validar arquivos, automatizar rotinas, analisar dados financeiros e transformar processos operacionais em aplicações web mais claras, rápidas e confiáveis.",
+    role: "Python | SQL | Dados financeiros | Automação",
     keywords: [
       "Python",
       "SQL",
@@ -36,41 +35,49 @@ export const pt = {
       "APIs",
       "Next.js",
     ],
+    signals: ["Validação de arquivos", "Diagnóstico SQL", "Automação web"],
   },
   sections: {
     about: {
-      eyebrow: "Sobre mim",
-      title: "Tecnologia aplicada a processos que precisam ser confiáveis.",
-      body: "Sou estudante de Análise e Desenvolvimento de Sistemas e profissional da área de tecnologia, com experiência prática em suporte técnico, SQL, análise de dados financeiros e automação com Python. Tenho interesse em desenvolvimento backend, tratamento de arquivos, integração de sistemas e criação de ferramentas que transformam processos manuais em soluções mais rápidas, confiáveis e organizadas.",
+      eyebrow: "Sobre",
+      title:
+        "Soluções que conectam dados, regras de negócio e experiência de uso.",
+      body: "Atuo no desenvolvimento de soluções voltadas para automação, análise de dados financeiros, consultas SQL, tratamento de arquivos e interfaces web.\n\nMinha experiência está concentrada em entender processos operacionais, investigar inconsistências, validar informações em banco de dados e transformar rotinas manuais em soluções mais organizadas, rastreáveis e eficientes.\n\nTenho foco em Python, SQL, MySQL, React, Next.js e Tailwind CSS, aplicando essas tecnologias em projetos que conectam dados, regras de negócio e experiência de uso.",
     },
     specialties: {
       eyebrow: "Especialidades",
-      title: "Onde eu concentro minha energia técnica.",
+      title: "Competências para diagnosticar, automatizar e entregar.",
       description:
-        "Um conjunto de habilidades voltado para dados financeiros, automação operacional e soluções web com boa experiência de uso.",
+        "Um conjunto de habilidades direcionado a processos financeiros, automação operacional, tratamento de arquivos e produtos web com boa leitura de dados.",
     },
     stack: {
       eyebrow: "Stack e ferramentas",
-      title: "Ferramentas para construir, investigar e entregar.",
+      title:
+        "Tecnologias para construir, investigar e entregar com consistência.",
       description:
-        "Tecnologias que uso para transformar arquivos, consultas e regras operacionais em interfaces, scripts e fluxos mais eficientes.",
+        "Ferramentas usadas para transformar arquivos, consultas e regras operacionais em rotinas automatizadas, dashboards e aplicações web.",
     },
     projects: {
       eyebrow: "Projetos",
-      title: "Soluções criadas e ideias em evolução.",
-      built: "Projetos criados",
-      future: "Projetos em desenvolvimento",
+      title: "Projetos em destaque e labs técnicos.",
+      description:
+        "Uma vitrine de soluções publicadas, seguida por experimentos em andamento com foco em validação, conciliação e APIs financeiras.",
+      built: "Projetos em destaque",
+      future: "Labs",
+      labsDescription:
+        "Experimentos técnicos em andamento para explorar automação financeira, validação de layouts e APIs de dados.",
     },
     experience: {
-      eyebrow: "Experiência prática",
-      title: "Suporte técnico, dados e desenvolvimento no mesmo raciocínio.",
-      body: "Minha experiência combina suporte técnico, análise de banco de dados e desenvolvimento. Atuo investigando problemas, validando informações em SQL, entendendo regras de negócio e criando soluções que ajudam a reduzir retrabalho e aumentar a confiabilidade dos dados.",
+      eyebrow: "Experiência aplicada",
+      title:
+        "Experiência aplicada em dados, automação e processos financeiros.",
+      body: "Minha atuação combina análise de dados, SQL, automação e desenvolvimento. Trabalho com investigação de inconsistências, validação de registros financeiros, leitura de arquivos, entendimento de regras de negócio e criação de soluções que aumentam a confiabilidade dos processos.",
     },
     process: {
       eyebrow: "Como eu trabalho",
-      title: "Do entendimento do problema à melhoria contínua.",
+      title: "Um processo orientado por contexto, dados e validação.",
       description:
-        "Gosto de começar pelo contexto real do processo, entender os dados e então construir com clareza, validação e manutenção em mente.",
+        "Cada solução começa pelo entendimento do processo real, passa pela análise dos dados e termina com uma entrega clara, testável e pronta para evoluir.",
     },
     faq: {
       eyebrow: "FAQ",

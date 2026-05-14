@@ -1,6 +1,7 @@
 "use client";
 
 import { ArrowUpRight, GitBranch, Sparkles } from "lucide-react";
+import { motion } from "framer-motion";
 import { AnimatedCard } from "@/components/common/AnimatedCard";
 import { Badge } from "@/components/common/Badge";
 import { MagneticButton } from "@/components/common/MagneticButton";
@@ -8,85 +9,94 @@ import { SectionHeader } from "@/components/common/SectionHeader";
 import { Container } from "@/components/layout/Container";
 import { projects } from "@/data/projects";
 import { useLanguage } from "@/hooks/useLanguage";
+import { useReducedMotion } from "@/hooks/useReducedMotion";
 
 type ProjectLabels = {
-  problem: string;
-  solution: string;
-  technologies: string;
-  features: string;
-  future: string;
-  concept: string;
+  challenge: string;
+  delivery: string;
+  stack: string;
+  highlights: string;
+  roadmap: string;
+  labStatus: string;
 };
 
 const projectLabels: Record<"pt" | "en", ProjectLabels> = {
   pt: {
-    problem: "Problema",
-    solution: "Solução",
-    technologies: "Tecnologias",
-    features: "Funcionalidades",
-    future: "Melhorias futuras",
-    concept: "Em desenvolvimento",
+    challenge: "Contexto",
+    delivery: "Solucao",
+    stack: "Stack",
+    highlights: "Destaques",
+    roadmap: "Evolucao",
+    labStatus: "Experimento em andamento",
   },
   en: {
-    problem: "Problem",
-    solution: "Solution",
-    technologies: "Technologies",
-    features: "Features",
-    future: "Future improvements",
-    concept: "In development",
+    challenge: "Context",
+    delivery: "Solution",
+    stack: "Stack",
+    highlights: "Highlights",
+    roadmap: "Evolution",
+    labStatus: "Experiment in progress",
   },
-} as const;
+};
 
 export function Projects() {
   const { language, t } = useLanguage();
   const built = projects.filter((project) => project.status === "built");
-  const future = projects.filter((project) => project.status === "future");
-  const l = projectLabels[language];
+  const labs = projects.filter((project) => project.status === "future");
+  const labels = projectLabels[language];
 
   return (
-    <section id="projects" className="section-space">
+    <section id="projects" className="section-space relative overflow-hidden">
+      <div className="absolute inset-x-0 top-20 -z-10 h-72 bg-[radial-gradient(circle_at_center,rgba(var(--accent),0.14),transparent_65%)] blur-3xl" />
       <Container>
-        <SectionHeader
-          eyebrow={t.sections.projects.eyebrow}
-          title={t.sections.projects.title}
-        />
+        <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <SectionHeader
+            eyebrow={t.sections.projects.eyebrow}
+            title={t.sections.projects.title}
+            description={t.sections.projects.description}
+          />
+          <div className="hidden rounded-2xl border border-white/10 bg-white/5 p-4 text-sm font-bold text-slate-300 light-border light-card light-text-muted lg:block">
+            Python / SQL / Next.js / Vercel
+          </div>
+        </div>
 
-        <div className="mt-12">
-          <div className="mb-5 flex items-center gap-3">
+        <div className="mt-14">
+          <div className="mb-6 flex items-center gap-3">
             <Sparkles size={18} className="text-[rgb(var(--accent))]" />
-            <h3 className="text-xl font-black text-white light-text">
+            <h3 className="text-2xl font-black text-white light-text">
               {t.sections.projects.built}
             </h3>
           </div>
-          <div className="grid gap-5 lg:grid-cols-2">
+          <div className="grid gap-6">
             {built.map((project, index) => (
-              <ProjectCard
+              <FeaturedProjectCard
                 key={project.id}
                 project={project}
                 language={language}
-                labels={l}
-                delay={index * 0.08}
-                featured
+                labels={labels}
+                index={index}
               />
             ))}
           </div>
         </div>
 
-        <div className="mt-14">
-          <div className="mb-5 flex items-center gap-3">
-            <span className="h-px w-10 bg-[rgb(var(--accent))]" />
-            <h3 className="text-xl font-black text-white light-text">
+        <div className="mt-16 rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-5 light-border light-card md:p-7">
+          <div className="mb-7 max-w-3xl">
+            <Badge className="accent-border accent-soft mb-4">
               {t.sections.projects.future}
-            </h3>
+            </Badge>
+            <p className="text-base leading-8 text-slate-300 light-text-muted">
+              {t.sections.projects.labsDescription}
+            </p>
           </div>
-          <div className="grid gap-5 lg:grid-cols-3">
-            {future.map((project, index) => (
-              <ProjectCard
+          <div className="grid gap-4 lg:grid-cols-3">
+            {labs.map((project, index) => (
+              <LabCard
                 key={project.id}
                 project={project}
                 language={language}
-                labels={l}
-                delay={index * 0.08}
+                labels={labels}
+                delay={index * 0.05}
               />
             ))}
           </div>
@@ -96,93 +106,150 @@ export function Projects() {
   );
 }
 
-function ProjectCard({
+function FeaturedProjectCard({
+  project,
+  language,
+  labels,
+  index,
+}: {
+  project: (typeof projects)[number];
+  language: "pt" | "en";
+  labels: ProjectLabels;
+  index: number;
+}) {
+  const content = project[language];
+  const reducedMotion = useReducedMotion();
+
+  return (
+    <motion.article
+      initial={reducedMotion ? false : { opacity: 0, y: 52, scale: 0.98 }}
+      whileInView={reducedMotion ? undefined : { opacity: 1, y: 0, scale: 1 }}
+      viewport={{ once: true, margin: "-90px" }}
+      transition={{
+        duration: 0.8,
+        delay: index * 0.08,
+        ease: [0.22, 1, 0.36, 1],
+      }}
+      className="group relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-[linear-gradient(140deg,rgba(15,23,42,0.94),rgba(15,23,42,0.7))] p-5 shadow-[0_30px_120px_rgba(2,6,23,0.38)] light-border light-card md:p-7"
+    >
+      <div className="absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(var(--accent),0.85),transparent)]" />
+      <div className="grid gap-7 lg:grid-cols-[0.9fr_1.1fr] lg:items-stretch">
+        <div className="relative min-h-72 overflow-hidden rounded-2xl border border-white/10 bg-slate-950/70 p-5 light-border light-inner-panel">
+          <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(var(--accent),0.22),transparent_45%,rgba(34,197,94,0.12))]" />
+          <div className="relative flex h-full flex-col justify-between">
+            <div>
+              <div className="mb-5 flex flex-wrap gap-2">
+                {project.tags.map((tag) => (
+                  <Badge key={tag}>{tag}</Badge>
+                ))}
+              </div>
+              <p className="text-sm font-black uppercase text-[rgb(var(--accent))]">
+                0{index + 1}
+              </p>
+              <h3 className="mt-3 text-3xl font-black leading-tight text-white light-text md:text-4xl">
+                {content.title}
+              </h3>
+            </div>
+            <div className="mt-8 grid grid-cols-3 gap-3">
+              {content.technologies.slice(0, 3).map((item) => (
+                <div
+                  key={item}
+                  className="rounded-xl border border-white/10 bg-white/10 p-3 text-center text-xs font-black text-white backdrop-blur light-border light-card light-text"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col justify-between">
+          <div>
+            <p className="max-w-3xl text-lg leading-8 text-slate-200 light-text-muted">
+              {content.description}
+            </p>
+
+            <div className="mt-7 grid gap-5 md:grid-cols-2">
+              <Detail title={labels.challenge} value={content.problem} />
+              <Detail title={labels.delivery} value={content.solution} />
+            </div>
+
+            <div className="mt-7">
+              <p className="mb-4 text-xs font-black uppercase text-[rgb(var(--accent))]">
+                {labels.highlights}
+              </p>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {content.features.map((feature) => (
+                  <div
+                    key={feature}
+                    className="rounded-xl border border-white/10 bg-white/[0.06] px-4 py-3 text-sm font-bold text-slate-200 light-border light-card light-text-muted"
+                  >
+                    {feature}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 flex flex-wrap items-center gap-3">
+            {"liveUrl" in project && project.liveUrl ? (
+              <MagneticButton
+                href={project.liveUrl}
+                target="_blank"
+                rel="noreferrer"
+                variant="primary"
+                icon={<ArrowUpRight size={17} />}
+              >
+                {language === "pt" ? "Link demo" : "Live demo"}
+              </MagneticButton>
+            ) : null}
+            {"githubUrl" in project && project.githubUrl ? (
+              <MagneticButton
+                href={project.githubUrl}
+                target="_blank"
+                rel="noreferrer"
+                icon={<GitBranch size={17} />}
+              >
+                GitHub
+              </MagneticButton>
+            ) : null}
+            <span className="text-sm font-bold text-slate-400 light-text-muted">
+              {content.technologies.join(" / ")}
+            </span>
+          </div>
+        </div>
+      </div>
+    </motion.article>
+  );
+}
+
+function LabCard({
   project,
   language,
   labels,
   delay,
-  featured = false,
 }: {
   project: (typeof projects)[number];
   language: "pt" | "en";
   labels: ProjectLabels;
   delay: number;
-  featured?: boolean;
 }) {
   const content = project[language];
 
   return (
-    <AnimatedCard
-      delay={delay}
-      className={featured ? "min-h-[34rem]" : "min-h-[28rem]"}
-    >
-      <div className="absolute inset-x-0 top-0 h-1 accent-bg" />
-      <div className="mb-8 flex min-h-32 items-end rounded-2xl border border-white/10 bg-[linear-gradient(145deg,rgba(var(--accent),0.18),rgba(59,130,246,0.12),rgba(15,23,42,0.4))] p-5 light-border">
-        <div>
-          {project.status === "future" ? (
-            <Badge className="mb-4">{labels.concept}</Badge>
-          ) : null}
-          <h3 className="text-2xl font-black text-white light-text">
-            {content.title}
-          </h3>
-          <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-300 light-text-muted">
-            {content.description}
-          </p>
-        </div>
-      </div>
-
-      <div className="mb-6 flex flex-wrap gap-2">
+    <AnimatedCard className="min-h-0 p-5 md:p-5" delay={delay}>
+      <Badge className="mb-5">{labels.labStatus}</Badge>
+      <h3 className="text-xl font-black text-white light-text">
+        {content.title}
+      </h3>
+      <p className="mt-4 text-sm leading-7 text-slate-400 light-text-muted">
+        {content.description}
+      </p>
+      <div className="mt-5 flex flex-wrap gap-2">
         {project.tags.map((tag) => (
           <Badge key={tag}>{tag}</Badge>
         ))}
       </div>
-
-      <div className="grid gap-4">
-        <Detail title={labels.problem} value={content.problem} />
-        <Detail title={labels.solution} value={content.solution} />
-        <div className="grid gap-4 md:grid-cols-2">
-          <Detail
-            title={labels.technologies}
-            value={content.technologies.join(", ")}
-          />
-          <Detail title={labels.future} value={content.future} />
-        </div>
-        <div>
-          <p className="mb-3 text-xs font-black uppercase text-[rgb(var(--accent))]">
-            {labels.features}
-          </p>
-          <ul className="grid gap-2 text-sm text-slate-300 light-text-muted">
-            {content.features.map((feature) => (
-              <li key={feature} className="flex gap-2">
-                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[rgb(var(--accent))]" />
-                <span>{feature}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-
-      {"liveUrl" in project && project.liveUrl ? (
-        <div className="mt-8 flex flex-wrap gap-3">
-          <MagneticButton
-            href={project.liveUrl}
-            target="_blank"
-            rel="noreferrer"
-            variant="primary"
-            icon={<ArrowUpRight size={17} />}
-          >
-            {language === "pt" ? "Link demo" : "Live demo"}
-          </MagneticButton>
-          <MagneticButton
-            href={project.githubUrl}
-            target="_blank"
-            rel="noreferrer"
-            icon={<GitBranch size={17} />}
-          >
-            GitHub
-          </MagneticButton>
-        </div>
-      ) : null}
     </AnimatedCard>
   );
 }

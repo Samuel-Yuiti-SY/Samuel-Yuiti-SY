@@ -26,7 +26,7 @@ export function Hero() {
       className="grid-bg relative isolate min-h-screen overflow-hidden pt-28"
     >
       <ScrollLayers />
-      <Container className="grid min-h-[calc(100vh-6rem)] items-center gap-10 py-10 lg:grid-cols-[1.02fr_0.98fr] lg:py-14">
+      <Container className="grid min-h-[calc(100vh-6rem)] items-center gap-10 py-10 lg:grid-cols-[0.98fr_1.02fr] lg:py-14">
         <div>
           <motion.div
             initial={reducedMotion ? false : { opacity: 0, y: 24 }}
@@ -52,7 +52,7 @@ export function Hero() {
             initial={reducedMotion ? false : { opacity: 0, y: 34 }}
             animate={reducedMotion ? undefined : { opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.12 }}
-            className="max-w-4xl text-3xl font-black leading-[1.04] text-white sm:text-4xl md:text-5xl light-text"
+            className="max-w-5xl text-5xl font-black leading-[0.98] text-white sm:text-6xl lg:text-7xl light-text"
           >
             {t.hero.title}
           </motion.h1>
@@ -61,7 +61,7 @@ export function Hero() {
             initial={reducedMotion ? false : { opacity: 0, y: 24 }}
             animate={reducedMotion ? undefined : { opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="mt-7 max-w-3xl text-base leading-8 text-slate-300 md:text-lg light-text-muted"
+            className="mt-7 max-w-3xl text-base leading-8 text-slate-300 md:text-xl md:leading-9 light-text-muted"
           >
             {t.hero.subtitle}
           </motion.p>
@@ -69,7 +69,23 @@ export function Hero() {
           <motion.div
             initial={reducedMotion ? false : { opacity: 0, y: 22 }}
             animate={reducedMotion ? undefined : { opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.28 }}
+            transition={{ duration: 0.7, delay: 0.24 }}
+            className="mt-8 grid max-w-3xl gap-3 sm:grid-cols-3"
+          >
+            {t.hero.signals.map((item) => (
+              <div
+                key={item}
+                className="rounded-2xl border border-white/10 bg-white/[0.06] p-4 text-sm font-black text-slate-200 backdrop-blur light-border light-card light-text-muted"
+              >
+                {item}
+              </div>
+            ))}
+          </motion.div>
+
+          <motion.div
+            initial={reducedMotion ? false : { opacity: 0, y: 22 }}
+            animate={reducedMotion ? undefined : { opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.3 }}
             className="mt-9 flex flex-wrap gap-3"
           >
             <MagneticButton

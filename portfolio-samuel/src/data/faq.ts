@@ -1,54 +1,54 @@
 export const faqItems = [
   {
-    id: "project-types",
+    id: "solutions",
     pt: {
-      question: "Em que tipo de projeto você trabalha?",
+      question: "Que tipo de solução você desenvolve?",
       answer:
-        "Tenho foco em soluções com Python, SQL, automação, análise de dados financeiros, tratamento de arquivos e interfaces web modernas.",
+        "Desenvolvo soluções com Python, SQL, automação, tratamento de arquivos, análise de dados financeiros e interfaces web para melhorar processos operacionais.",
     },
     en: {
-      question: "What type of project do you work on?",
+      question: "What kind of solution do you build?",
       answer:
-        "I focus on solutions with Python, SQL, automation, financial data analysis, file processing, and modern web interfaces.",
+        "I build solutions with Python, SQL, automation, file processing, financial data analysis, and web interfaces to improve operational processes.",
     },
   },
   {
-    id: "backend-only",
+    id: "technical-focus",
     pt: {
-      question: "Você trabalha apenas com backend?",
+      question: "Qual é seu foco técnico?",
       answer:
-        "Meu foco principal é Python, SQL e dados, mas também desenvolvo interfaces com React, Next.js e Tailwind para transformar soluções técnicas em produtos utilizáveis.",
+        "Meu foco está em Python, SQL, MySQL, automação de rotinas, validação de dados, React, Next.js, Tailwind CSS e deploy de aplicações web.",
     },
     en: {
-      question: "Do you only work with backend?",
+      question: "What is your technical focus?",
       answer:
-        "My main focus is Python, SQL, and data, but I also build interfaces with React, Next.js, and Tailwind to turn technical solutions into usable products.",
+        "My focus is Python, SQL, MySQL, routine automation, data validation, React, Next.js, Tailwind CSS, and web application deployment.",
     },
   },
   {
-    id: "company-projects",
+    id: "financial-data",
     pt: {
-      question: "Você pode mostrar projetos de empresa?",
+      question: "Você trabalha com dados financeiros?",
       answer:
-        "Projetos internos ou privados não são expostos. Quando necessário, crio versões genéricas e fictícias para demonstrar habilidades sem revelar dados, regras ou código privado.",
+        "Sim. O portfólio destaca projetos e experiências ligados a arquivos financeiros, validação de registros, divergências, dashboards e processos de conciliação simulados ou públicos.",
     },
     en: {
-      question: "Can you show company projects?",
+      question: "Do you work with financial data?",
       answer:
-        "Internal or private projects are not exposed. When needed, I create generic and fictional versions to demonstrate skills without revealing private data, rules, or code.",
+        "Yes. The portfolio highlights projects and experience related to financial files, record validation, discrepancies, dashboards, and simulated or public reconciliation processes.",
     },
   },
   {
-    id: "main-stack",
+    id: "real-data",
     pt: {
-      question: "Qual sua stack principal?",
+      question: "Seus projetos usam dados reais?",
       answer:
-        "Python, SQL, MySQL, Git, GitHub, VS Code, pgAdmin, DataGrip, React, Next.js, Tailwind CSS e Vercel.",
+        "Não exponho dados sensíveis ou privados. Projetos públicos usam dados fictícios, demonstrativos ou arquivos tratados de forma genérica para preservar regras e informações internas.",
     },
     en: {
-      question: "What is your main stack?",
+      question: "Do your projects use real data?",
       answer:
-        "Python, SQL, MySQL, Git, GitHub, VS Code, pgAdmin, DataGrip, React, Next.js, Tailwind CSS, and Vercel.",
+        "I do not expose sensitive or private data. Public projects use fictional, demo, or generic files to preserve internal rules and information.",
     },
   },
   {

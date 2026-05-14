@@ -7,14 +7,14 @@ export function Marquee({
   items: readonly string[];
   reverse?: boolean;
 }) {
-  const repeatedItems = [...items, ...items, ...items];
+  const repeatedItems = [...items, ...items, ...items, ...items];
 
   return (
-    <div className="relative flex overflow-hidden border-y border-white/10 py-5 light-border">
+    <div className="marquee-shell relative flex overflow-hidden border-y border-white/10 py-5 light-border">
       <div
         className={cn(
-          "flex min-w-max gap-4 motion-safe:animate-marquee",
-          reverse && "motion-safe:animate-marquee-reverse",
+          "marquee-track flex min-w-max gap-4",
+          reverse ? "animate-marquee-reverse" : "animate-marquee",
         )}
       >
         {repeatedItems.map((item, index) => (

@@ -1,43 +1,38 @@
 export const experienceItems = [
   {
     id: "financial-analysis",
-    pt: "Análise de dados financeiros.",
-    en: "Financial data analysis.",
+    pt: "Análise de dados financeiros",
+    en: "Financial data analysis",
   },
   {
-    id: "sql-investigation",
-    pt: "Consultas SQL para investigação de registros.",
-    en: "SQL queries for record investigation.",
+    id: "sql-validation",
+    pt: "Consultas SQL e validação de registros",
+    en: "SQL queries and record validation",
   },
   {
-    id: "payment-validation",
-    pt: "Validação de pagamentos, vendas e movimentações.",
-    en: "Validation of payments, sales, and movements.",
+    id: "file-layouts",
+    pt: "Tratamento de arquivos e layouts",
+    en: "File and layout processing",
   },
   {
-    id: "reconciliation",
-    pt: "Apoio em processos de conciliação.",
-    en: "Support for reconciliation processes.",
+    id: "routine-automation",
+    pt: "Automação de rotinas operacionais",
+    en: "Operational routine automation",
   },
   {
-    id: "python-automation",
-    pt: "Automação com Python.",
-    en: "Automation with Python.",
+    id: "dashboards",
+    pt: "Dashboards e interfaces web",
+    en: "Dashboards and web interfaces",
+  },
+  {
+    id: "data-diagnosis",
+    pt: "Diagnóstico técnico orientado a dados",
+    en: "Data-driven technical diagnosis",
   },
   {
     id: "documentation",
-    pt: "Organização de documentação técnica.",
-    en: "Organization of technical documentation.",
-  },
-  {
-    id: "support-development",
-    pt: "Suporte técnico com visão de desenvolvimento.",
-    en: "Technical support with a development mindset.",
-  },
-  {
-    id: "inconsistencies",
-    pt: "Análise de inconsistências operacionais.",
-    en: "Analysis of operational inconsistencies.",
+    pt: "Documentação técnica e melhoria contínua",
+    en: "Technical documentation and continuous improvement",
   },
 ] as const;
 
@@ -45,14 +40,14 @@ export const workProcess = [
   {
     id: "understand",
     pt: {
-      title: "Entendimento do problema",
+      title: "Entendimento do processo",
       description:
-        "Antes de codar, busco entender o processo, a regra de negócio e o impacto do problema.",
+        "Mapeio o fluxo operacional, as regras de negócio e os pontos onde dados, arquivos ou etapas manuais geram risco.",
     },
     en: {
-      title: "Problem understanding",
+      title: "Process understanding",
       description:
-        "Before coding, I understand the process, the business rule, and the impact of the issue.",
+        "I map the operational flow, business rules, and points where data, files, or manual steps create risk.",
     },
   },
   {
@@ -60,25 +55,25 @@ export const workProcess = [
     pt: {
       title: "Análise dos dados",
       description:
-        "Investigo registros, arquivos, consultas SQL e possíveis inconsistências.",
+        "Investigo registros, layouts, consultas SQL e inconsistências para separar causa raiz de sintomas.",
     },
     en: {
       title: "Data analysis",
       description:
-        "I investigate records, files, SQL queries, and possible inconsistencies.",
+        "I investigate records, layouts, SQL queries, and inconsistencies to separate root causes from symptoms.",
     },
   },
   {
-    id: "plan",
+    id: "solution-design",
     pt: {
-      title: "Planejamento da solução",
+      title: "Desenho da solução",
       description:
-        "Organizo a estrutura, defino tecnologias e separo responsabilidades.",
+        "Defino a arquitetura, entradas, validações e saídas esperadas antes de transformar a ideia em código.",
     },
     en: {
-      title: "Solution planning",
+      title: "Solution design",
       description:
-        "I organize the structure, define technologies, and separate responsibilities.",
+        "I define architecture, inputs, validations, and expected outputs before turning the idea into code.",
     },
   },
   {
@@ -86,12 +81,12 @@ export const workProcess = [
     pt: {
       title: "Desenvolvimento",
       description:
-        "Construo soluções com código limpo, componentes reutilizáveis e foco em manutenção.",
+        "Construo rotinas, APIs ou interfaces com foco em clareza, manutenção e evolução futura.",
     },
     en: {
       title: "Development",
       description:
-        "I build solutions with clean code, reusable components, and maintenance in mind.",
+        "I build routines, APIs, or interfaces with clarity, maintenance, and future evolution in mind.",
     },
   },
   {
@@ -99,23 +94,25 @@ export const workProcess = [
     pt: {
       title: "Validação",
       description:
-        "Testo cenários, comparo resultados e documento o funcionamento.",
+        "Comparo resultados, testo cenários, reviso exceções e documento o comportamento da solução.",
     },
     en: {
       title: "Validation",
       description:
-        "I test scenarios, compare results, and document how the solution works.",
+        "I compare results, test scenarios, review exceptions, and document how the solution behaves.",
     },
   },
   {
     id: "evolution",
     pt: {
       title: "Evolução",
-      description: "Analiso melhorias futuras, performance e usabilidade.",
+      description:
+        "Analiso performance, usabilidade, rastreabilidade e oportunidades de automação adicional.",
     },
     en: {
       title: "Evolution",
-      description: "I analyze future improvements, performance, and usability.",
+      description:
+        "I analyze performance, usability, traceability, and opportunities for additional automation.",
     },
   },
 ] as const;

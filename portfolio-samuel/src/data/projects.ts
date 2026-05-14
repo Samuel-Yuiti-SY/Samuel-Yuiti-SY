@@ -8,13 +8,13 @@ export const projects = [
     liveUrl: "https://site-umber-six-63.vercel.app",
     githubUrl: "https://github.com/Samuel-Yuiti-SY/Ofx-Formatter",
     pt: {
-      title: "Correção de Extratos Caixa OFX",
+      title: "OFX Formatter — Correção de Extratos Caixa",
       description:
-        "Ferramenta web para correção e padronização de arquivos OFX da Caixa, facilitando o tratamento de extratos e o uso posterior em sistemas financeiros.",
+        "Aplicação web para correção, padronização e exportação de arquivos OFX, criada para facilitar o tratamento de extratos financeiros e reduzir erros de leitura em sistemas de análise ou conciliação.",
       problem:
-        "Arquivos OFX podem chegar com inconsistências de estrutura, datas ou campos, dificultando importação e conferência.",
+        "Arquivos OFX podem chegar com estrutura irregular, tags inconsistentes, datas sem padrão ou timezone ausente, criando falhas na leitura por sistemas financeiros.",
       solution:
-        "Uma interface simples para enviar o arquivo, validar formato, corrigir padrões e baixar uma versão normalizada.",
+        "Uma aplicação web que valida o upload, processa o conteúdo em memória, corrige padrões estruturais e devolve um arquivo pronto para uso.",
       technologies: [
         "Next.js",
         "React",
@@ -23,22 +23,24 @@ export const projects = [
         "Vercel",
       ],
       features: [
-        "Upload e validação de arquivos OFX",
+        "Upload e validação de arquivo OFX",
+        "Correção de estrutura e tags",
+        "Normalização de datas e timezone",
         "Processamento em memória",
-        "Correção de tags, datas e timezone",
-        "Download do arquivo formatado",
+        "Download do arquivo corrigido",
+        "Deploy na Vercel",
       ],
       future:
-        "Adicionar histórico local, relatório de alterações e suporte a outros layouts bancários.",
+        "Evoluir relatórios de alterações, suporte a novos layouts e validações configuráveis.",
     },
     en: {
-      title: "Caixa OFX Statement Formatter",
+      title: "OFX Formatter — Caixa Statement Correction",
       description:
-        "Web tool for correcting and standardizing Caixa OFX files, making bank statement processing easier for financial systems.",
+        "Web application for correcting, standardizing, and exporting OFX files, designed to simplify financial statement processing and reduce reading errors in analysis or reconciliation systems.",
       problem:
-        "OFX files can contain structural, date, or field inconsistencies that make import and review harder.",
+        "OFX files can contain irregular structure, inconsistent tags, non-standard dates, or missing timezone data, creating reading failures in financial systems.",
       solution:
-        "A simple interface to upload the file, validate its format, correct patterns, and download a normalized version.",
+        "A web application that validates the upload, processes content in memory, fixes structural patterns, and returns a file ready for use.",
       technologies: [
         "Next.js",
         "React",
@@ -47,36 +49,31 @@ export const projects = [
         "Vercel",
       ],
       features: [
-        "OFX upload and validation",
+        "OFX file upload and validation",
+        "Structure and tag correction",
+        "Date and timezone normalization",
         "In-memory processing",
-        "Tag, date, and timezone correction",
-        "Formatted file download",
+        "Corrected file download",
+        "Deployment on Vercel",
       ],
       future:
-        "Add local history, change reports, and support for more bank layouts.",
+        "Evolve change reports, support new layouts, and add configurable validations.",
     },
   },
   {
     id: "carbontrack",
     status: "built" as ProjectStatus,
-    tags: [
-      "Dashboard",
-      "React",
-      "Next.js",
-      "Tailwind",
-      "Dados",
-      "Sustentabilidade",
-    ],
+    tags: ["Dashboard", "React", "Next.js", "Tailwind", "Dados", "SaaS"],
     liveUrl: "https://carbontrack-v2-theta.vercel.app",
     githubUrl: "https://github.com/Samuel-Yuiti-SY/CarbonTrack",
     pt: {
-      title: "CarbonTrack",
+      title: "CarbonTrack — Emissions Intelligence Dashboard",
       description:
-        "Dashboard web para monitoramento de emissões de CO2, gestão de frota, relatórios ambientais e acompanhamento de indicadores sustentáveis.",
+        "Dashboard web para visualização de emissões de CO2, frota, indicadores ambientais e relatórios gerenciais, simulando uma plataforma SaaS para acompanhamento de metas sustentáveis.",
       problem:
-        "Indicadores ambientais e dados de frota precisam ser visualizados de forma clara para facilitar leitura e acompanhamento.",
+        "Indicadores ambientais e operacionais precisam de uma interface clara para facilitar acompanhamento, leitura executiva e análise por período.",
       solution:
-        "Um painel demonstrativo com métricas, relatórios e navegação para simular um produto de monitoramento ambiental.",
+        "Um dashboard responsivo com KPIs, telas de frota, visualização de emissões e relatórios para simular uma experiência SaaS completa.",
       technologies: [
         "Python",
         "Flask",
@@ -86,22 +83,24 @@ export const projects = [
         "Tailwind CSS",
       ],
       features: [
-        "Dashboard com indicadores",
-        "Páginas de frota, emissões e relatórios",
-        "Dados fictícios para demonstração",
-        "Versão moderna publicada na Vercel",
+        "Dashboard com KPIs",
+        "Visualização de emissões",
+        "Gestão simulada de frota",
+        "Relatórios ambientais",
+        "Interface responsiva",
+        "Tema claro/escuro",
       ],
       future:
-        "Evoluir filtros, gráficos interativos, autenticação real e persistência de dados simulados.",
+        "Evoluir filtros, gráficos interativos, persistência de dados demonstrativos e autenticação.",
     },
     en: {
-      title: "CarbonTrack",
+      title: "CarbonTrack — Emissions Intelligence Dashboard",
       description:
-        "Web dashboard for CO2 emissions monitoring, fleet management, environmental reports, and sustainability KPI tracking.",
+        "Web dashboard for visualizing CO2 emissions, fleet data, environmental indicators, and management reports, simulating a SaaS platform for sustainability goal tracking.",
       problem:
-        "Environmental indicators and fleet data need to be visualized clearly for easier review and tracking.",
+        "Environmental and operational indicators need a clear interface for tracking, executive reading, and period-based analysis.",
       solution:
-        "A demo dashboard with metrics, reports, and navigation that simulates an environmental monitoring product.",
+        "A responsive dashboard with KPIs, fleet screens, emissions visualization, and reports to simulate a complete SaaS experience.",
       technologies: [
         "Python",
         "Flask",
@@ -111,128 +110,94 @@ export const projects = [
         "Tailwind CSS",
       ],
       features: [
-        "Dashboard with indicators",
-        "Fleet, emissions, and reports pages",
-        "Fictional data for demonstration",
-        "Modern version deployed on Vercel",
+        "Dashboard with KPIs",
+        "Emissions visualization",
+        "Simulated fleet management",
+        "Environmental reports",
+        "Responsive interface",
+        "Light/dark theme",
       ],
       future:
-        "Improve filters, interactive charts, real authentication, and simulated data persistence.",
+        "Evolve filters, interactive charts, demo data persistence, and authentication.",
     },
   },
   {
     id: "financial-layout-validator",
     status: "future" as ProjectStatus,
-    tags: ["Python", "Validação", "Arquivos", "Financeiro"],
+    tags: ["Python", "Validação", "Arquivos"],
     pt: {
-      title: "Validador de Layout Financeiro",
+      title: "Financial Layout Validator",
       description:
-        "Sistema para validar arquivos financeiros simulados, identificar campos obrigatórios ausentes, linhas inválidas e inconsistências de estrutura.",
-      problem:
-        "Arquivos operacionais podem ser rejeitados por campos ausentes, ordem incorreta ou linhas fora do padrão.",
-      solution:
-        "Validador com regras configuráveis, retorno de erros por linha e resumo de inconsistências.",
-      technologies: ["Python", "SQL", "FastAPI", "React"],
-      features: [
-        "Leitura de arquivos simulados",
-        "Validação de campos obrigatórios",
-        "Relatório de erros por linha",
-      ],
+        "Validador para arquivos financeiros simulados, focado em campos obrigatórios, linhas inválidas e inconsistências de estrutura.",
+      problem: "Layouts financeiros precisam de validação antes de importação.",
+      solution: "Motor de regras para leitura e diagnóstico de arquivos.",
+      technologies: ["Python", "SQL", "FastAPI"],
+      features: ["Validação de layout", "Erros por linha", "Resumo técnico"],
       future:
-        "Criar interface de upload, exportação de relatório e templates por layout.",
+        "Protótipo em evolução para upload, relatórios e regras configuráveis.",
     },
     en: {
       title: "Financial Layout Validator",
       description:
-        "System for validating simulated financial files, identifying missing required fields, invalid lines, and structural inconsistencies.",
-      problem:
-        "Operational files can be rejected because of missing fields, incorrect order, or lines outside the expected structure.",
-      solution:
-        "Validator with configurable rules, line-level errors, and inconsistency summaries.",
-      technologies: ["Python", "SQL", "FastAPI", "React"],
-      features: [
-        "Simulated file reading",
-        "Required field validation",
-        "Line-level error report",
-      ],
+        "Validator for simulated financial files focused on required fields, invalid lines, and structural inconsistencies.",
+      problem: "Financial layouts need validation before import.",
+      solution: "Rules engine for file reading and diagnosis.",
+      technologies: ["Python", "SQL", "FastAPI"],
+      features: ["Layout validation", "Line-level errors", "Technical summary"],
       future:
-        "Create upload interface, report export, and templates by file layout.",
+        "Prototype evolving toward upload, reports, and configurable rules.",
     },
   },
   {
     id: "reconciliation-dashboard",
     status: "future" as ProjectStatus,
-    tags: ["Dashboard", "SQL", "Dados fictícios", "Conciliação"],
+    tags: ["Dashboard", "SQL", "Conciliação"],
     pt: {
-      title: "Dashboard de Conciliação Financeira Simulada",
+      title: "Reconciliation Dashboard",
       description:
-        "Dashboard para análise de vendas, pagamentos, divergências, taxas e pendências usando dados fictícios.",
+        "Dashboard para vendas, pagamentos, divergências, taxas e pendências usando dados fictícios.",
       problem:
-        "Processos de conciliação exigem visão rápida sobre diferenças, pendências e indicadores de volume.",
-      solution:
-        "Painel com dados simulados, filtros e cards de impacto para demonstrar análise financeira visual.",
-      technologies: ["Next.js", "TypeScript", "SQL", "Tailwind CSS"],
-      features: [
-        "Cards de indicadores",
-        "Tabela de divergências",
-        "Filtros por período e status",
-      ],
-      future:
-        "Adicionar gráficos, upload CSV e explicação automática de divergências.",
+        "Conciliações precisam de leitura rápida de diferenças e pendências.",
+      solution: "Painel com indicadores, filtros e tabelas de divergência.",
+      technologies: ["Next.js", "TypeScript", "SQL"],
+      features: ["KPIs", "Filtros", "Tabela de divergências"],
+      future: "Experimento visual para simulação de conciliação financeira.",
     },
     en: {
-      title: "Simulated Financial Reconciliation Dashboard",
+      title: "Reconciliation Dashboard",
       description:
-        "Dashboard for analyzing sales, payments, discrepancies, fees, and pending items using fictional data.",
+        "Dashboard for sales, payments, discrepancies, fees, and pending items using fictional data.",
       problem:
-        "Reconciliation processes need a quick view of differences, pending items, and volume indicators.",
-      solution:
-        "Dashboard with simulated data, filters, and impact cards to demonstrate visual financial analysis.",
-      technologies: ["Next.js", "TypeScript", "SQL", "Tailwind CSS"],
-      features: [
-        "Indicator cards",
-        "Discrepancy table",
-        "Filters by period and status",
-      ],
-      future: "Add charts, CSV upload, and automatic discrepancy explanations.",
+        "Reconciliation needs quick reading of differences and pending items.",
+      solution: "Panel with indicators, filters, and discrepancy tables.",
+      technologies: ["Next.js", "TypeScript", "SQL"],
+      features: ["KPIs", "Filters", "Discrepancy table"],
+      future: "Visual experiment for simulated financial reconciliation.",
     },
   },
   {
     id: "transactions-api",
     status: "future" as ProjectStatus,
-    tags: ["Python", "API", "Transações", "Dados"],
+    tags: ["Python", "API", "Transações"],
     pt: {
-      title: "API de Transações Financeiras",
+      title: "Transactions API",
       description:
         "API em Python para cadastro, importação, análise e detecção de inconsistências em transações financeiras.",
-      problem:
-        "Transações vindas de fontes diferentes precisam de padronização, consulta e validação antes de análise.",
-      solution:
-        "API com endpoints para importar, registrar, listar e marcar inconsistências em dados simulados.",
-      technologies: ["Python", "FastAPI", "SQL", "PostgreSQL"],
-      features: [
-        "CRUD de transações simuladas",
-        "Importação estruturada",
-        "Detecção de inconsistências",
-      ],
-      future:
-        "Adicionar autenticação, testes automatizados e documentação OpenAPI completa.",
+      problem: "Transações de fontes diferentes precisam de padronização.",
+      solution: "API para importar, listar e sinalizar inconsistências.",
+      technologies: ["Python", "FastAPI", "SQL"],
+      features: ["CRUD", "Importação", "Validações"],
+      future: "Experimento para modelagem de endpoints financeiros.",
     },
     en: {
-      title: "Financial Transactions API",
+      title: "Transactions API",
       description:
         "Python API for registering, importing, analyzing, and detecting inconsistencies in financial transactions.",
-      problem:
-        "Transactions from different sources need standardization, querying, and validation before analysis.",
-      solution:
-        "API with endpoints to import, register, list, and flag inconsistencies in simulated data.",
-      technologies: ["Python", "FastAPI", "SQL", "PostgreSQL"],
-      features: [
-        "CRUD for simulated transactions",
-        "Structured import",
-        "Inconsistency detection",
-      ],
-      future: "Add authentication, automated tests, and complete OpenAPI docs.",
+      problem: "Transactions from different sources need standardization.",
+      solution: "API to import, list, and flag inconsistencies.",
+      technologies: ["Python", "FastAPI", "SQL"],
+      features: ["CRUD", "Import", "Validations"],
+      future: "Experiment for modeling financial endpoints.",
     },
   },
 ] as const;

@@ -21,9 +21,11 @@ export function About() {
             title={t.sections.about.title}
           />
           <div>
-            <p className="text-lg leading-9 text-slate-300 light-text-muted">
-              {t.sections.about.body}
-            </p>
+            <div className="space-y-6 text-lg leading-9 text-slate-300 light-text-muted">
+              {t.sections.about.body.split("\n\n").map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {aboutHighlights.map((item, index) => {
                 const Icon = icons[index];

@@ -26,7 +26,7 @@ Create a premium, responsive, bilingual portfolio with a strong technical identi
 - Portuguese and English language toggle
 - Scroll-based animation and layered hero effects
 - Animated technology marquee
-- Built projects and future project ideas separated visually
+- Featured projects and Labs separated visually
 - Practical experience section
 - Animated vertical work process timeline
 - FAQ accordion

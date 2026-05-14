@@ -21,11 +21,10 @@ export const en = {
   },
   hero: {
     status: "Available for opportunities and projects",
-    title:
-      "I build solutions with Python, SQL, and web technologies to turn financial data into clearer, faster, and more reliable processes.",
+    title: "Python, SQL and Financial Automation Developer",
     subtitle:
-      "I work with data analysis, automation, file processing, SQL queries, and modern interfaces to solve real operational problems.",
-    role: "Python Developer | SQL | Financial Data | Automation",
+      "I build solutions to validate files, automate routines, analyze financial data, and turn operational processes into clearer, faster, and more reliable web applications.",
+    role: "Python | SQL | Financial data | Automation",
     keywords: [
       "Python",
       "SQL",
@@ -36,41 +35,47 @@ export const en = {
       "APIs",
       "Next.js",
     ],
+    signals: ["File validation", "SQL diagnosis", "Web automation"],
   },
   sections: {
     about: {
-      eyebrow: "About me",
-      title: "Technology applied to processes that need to be reliable.",
-      body: "I am a Systems Analysis and Development student and technology professional with practical experience in technical support, SQL, financial data analysis, and automation with Python. I am interested in backend development, file processing, system integration, and building tools that turn manual processes into faster, more reliable, and more organized solutions.",
+      eyebrow: "About",
+      title:
+        "Solutions that connect data, business rules, and user experience.",
+      body: "I work on solutions focused on automation, financial data analysis, SQL queries, file processing, and web interfaces.\n\nMy experience is centered on understanding operational processes, investigating inconsistencies, validating database records, and turning manual routines into more organized, traceable, and efficient solutions.\n\nI focus on Python, SQL, MySQL, React, Next.js, and Tailwind CSS, applying these technologies to projects that connect data, business rules, and user experience.",
     },
     specialties: {
       eyebrow: "Specialties",
-      title: "Where I focus my technical energy.",
+      title: "Skills to diagnose, automate, and deliver.",
       description:
-        "A skill set focused on financial data, operational automation, and web solutions with a clear user experience.",
+        "A skill set directed at financial processes, operational automation, file processing, and web products with clear data reading.",
     },
     stack: {
       eyebrow: "Stack and tools",
-      title: "Tools to build, investigate, and deliver.",
+      title: "Technologies to build, investigate, and deliver consistently.",
       description:
-        "Technologies I use to transform files, queries, and operational rules into interfaces, scripts, and more efficient workflows.",
+        "Tools used to transform files, queries, and operational rules into automated routines, dashboards, and web applications.",
     },
     projects: {
       eyebrow: "Projects",
-      title: "Built solutions and ideas in progress.",
-      built: "Built projects",
-      future: "Projects in development",
+      title: "Featured projects and technical labs.",
+      description:
+        "A showcase of published solutions, followed by experiments in progress focused on validation, reconciliation, and financial APIs.",
+      built: "Featured projects",
+      future: "Labs",
+      labsDescription:
+        "Technical experiments in progress focused on financial automation, layout validation, and data APIs.",
     },
     experience: {
-      eyebrow: "Practical experience",
-      title: "Technical support, data, and development in the same mindset.",
-      body: "My experience combines technical support, database analysis, and development. I work on investigating issues, validating information with SQL, understanding business rules, and building solutions that reduce manual work and improve data reliability.",
+      eyebrow: "Applied experience",
+      title: "Applied experience in data, automation, and financial processes.",
+      body: "My work combines data analysis, SQL, automation, and development. I work with inconsistency investigation, financial record validation, file processing, business rule understanding, and solutions that increase process reliability.",
     },
     process: {
       eyebrow: "How I work",
-      title: "From problem understanding to continuous improvement.",
+      title: "A process guided by context, data, and validation.",
       description:
-        "I like to start with the real context of the process, understand the data, and then build with clarity, validation, and maintenance in mind.",
+        "Each solution starts with the real process, moves through data analysis, and ends with a clear, testable delivery that is ready to evolve.",
     },
     faq: {
       eyebrow: "FAQ",
