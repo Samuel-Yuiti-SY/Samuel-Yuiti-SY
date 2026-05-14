@@ -1,6 +1,12 @@
 "use client";
 
-import { ArrowUpRight, GitBranch, Sparkles } from "lucide-react";
+import {
+  ArrowUpRight,
+  BarChart3,
+  FileCheck2,
+  GitBranch,
+  Sparkles,
+} from "lucide-react";
 import { motion } from "framer-motion";
 import { AnimatedCard } from "@/components/common/AnimatedCard";
 import { Badge } from "@/components/common/Badge";
@@ -18,16 +24,18 @@ type ProjectLabels = {
   highlights: string;
   roadmap: string;
   labStatus: string;
+  builtStatus: string;
 };
 
 const projectLabels: Record<"pt" | "en", ProjectLabels> = {
   pt: {
     challenge: "Contexto",
-    delivery: "Solucao",
+    delivery: "Solução",
     stack: "Stack",
     highlights: "Destaques",
-    roadmap: "Evolucao",
+    roadmap: "Evolução",
     labStatus: "Experimento em andamento",
+    builtStatus: "Projeto criado",
   },
   en: {
     challenge: "Context",
@@ -36,6 +44,7 @@ const projectLabels: Record<"pt" | "en", ProjectLabels> = {
     highlights: "Highlights",
     roadmap: "Evolution",
     labStatus: "Experiment in progress",
+    builtStatus: "Built project",
   },
 };
 
@@ -133,13 +142,16 @@ function FeaturedProjectCard({
       className="group relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-[linear-gradient(140deg,rgba(15,23,42,0.94),rgba(15,23,42,0.7))] p-5 shadow-[0_30px_120px_rgba(2,6,23,0.38)] light-border light-card md:p-7"
     >
       <div className="absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(var(--accent),0.85),transparent)]" />
-      <div className="grid gap-7 lg:grid-cols-[0.9fr_1.1fr] lg:items-stretch">
+      <div className="grid gap-7 lg:grid-cols-[0.92fr_1.08fr] lg:items-stretch">
         <div className="relative min-h-72 overflow-hidden rounded-2xl border border-white/10 bg-slate-950/70 p-5 light-border light-inner-panel">
           <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(var(--accent),0.22),transparent_45%,rgba(34,197,94,0.12))]" />
           <div className="relative flex h-full flex-col justify-between">
             <div>
-              <div className="mb-5 flex flex-wrap gap-2">
-                {project.tags.map((tag) => (
+              <div className="mb-5 flex flex-wrap items-center gap-2">
+                <Badge className="accent-border accent-soft">
+                  {labels.builtStatus}
+                </Badge>
+                {project.tags.slice(0, 4).map((tag) => (
                   <Badge key={tag}>{tag}</Badge>
                 ))}
               </div>
@@ -149,6 +161,7 @@ function FeaturedProjectCard({
               <h3 className="mt-3 text-3xl font-black leading-tight text-white light-text md:text-4xl">
                 {content.title}
               </h3>
+              <ProjectMockup projectId={project.id} language={language} />
             </div>
             <div className="mt-8 grid grid-cols-3 gap-3">
               {content.technologies.slice(0, 3).map((item) => (
@@ -220,6 +233,87 @@ function FeaturedProjectCard({
         </div>
       </div>
     </motion.article>
+  );
+}
+
+function ProjectMockup({
+  projectId,
+  language,
+}: {
+  projectId: string;
+  language: "pt" | "en";
+}) {
+  if (projectId === "carbontrack") {
+    const labels =
+      language === "pt"
+        ? ["CO₂ evitado", "Frota", "Relatórios"]
+        : ["CO₂ avoided", "Fleet", "Reports"];
+
+    return (
+      <div className="mt-7 rounded-2xl border border-white/10 bg-slate-950/70 p-4 shadow-2xl light-border">
+        <div className="mb-4 flex items-center justify-between">
+          <div className="flex items-center gap-2 text-[rgb(var(--accent))]">
+            <BarChart3 size={18} />
+            <span className="text-xs font-black uppercase">
+              {language === "pt" ? "Preview SaaS" : "SaaS preview"}
+            </span>
+          </div>
+          <span className="rounded-full bg-emerald-400/12 px-3 py-1 text-xs font-black text-emerald-300">
+            KPI
+          </span>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-3">
+          {labels.map((label, itemIndex) => (
+            <div
+              key={label}
+              className="rounded-xl border border-white/10 bg-white/[0.07] p-3 light-border"
+            >
+              <div className="h-2 rounded-full bg-white/10">
+                <div
+                  className="h-2 rounded-full bg-[rgb(var(--accent))]"
+                  style={{ width: `${52 + itemIndex * 18}%` }}
+                />
+              </div>
+              <p className="mt-3 text-xs font-bold text-slate-300">{label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  const rows =
+    language === "pt"
+      ? ["Upload OFX", "Normalização", "Download corrigido"]
+      : ["OFX upload", "Normalization", "Corrected download"];
+
+  return (
+    <div className="mt-7 rounded-2xl border border-white/10 bg-slate-950/70 p-4 shadow-2xl light-border">
+      <div className="mb-4 flex items-center justify-between">
+        <div className="flex items-center gap-2 text-[rgb(var(--accent))]">
+          <FileCheck2 size={18} />
+          <span className="text-xs font-black uppercase">
+            {language === "pt" ? "Fluxo OFX" : "OFX flow"}
+          </span>
+        </div>
+        <span className="rounded-full bg-sky-400/12 px-3 py-1 text-xs font-black text-sky-300">
+          Vercel
+        </span>
+      </div>
+      <div className="space-y-3">
+        {rows.map((row, itemIndex) => (
+          <div
+            key={row}
+            className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.07] px-3 py-2 light-border"
+          >
+            <span className="accent-bg inline-flex h-6 w-6 items-center justify-center rounded-lg text-xs font-black text-slate-950">
+              {itemIndex + 1}
+            </span>
+            <span className="text-xs font-bold text-slate-300">{row}</span>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
 

@@ -164,7 +164,7 @@ export const techStack = {
       id: "database",
       pt: { title: "Banco de dados" },
       en: { title: "Databases" },
-      items: ["MySQL", "PostgreSQL", "pgAdmin", "DataGrip", "Consultas SQL"],
+      items: ["MySQL", "PostgreSQL", "pgAdmin", "DataGrip"],
     },
     {
       id: "tools",

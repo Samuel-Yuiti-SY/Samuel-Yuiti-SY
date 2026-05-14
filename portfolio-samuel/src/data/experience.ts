@@ -34,6 +34,11 @@ export const experienceItems = [
     pt: "Documentação técnica e melhoria contínua",
     en: "Technical documentation and continuous improvement",
   },
+  {
+    id: "data-rules-interface",
+    pt: "Integração entre dados, regras e interface",
+    en: "Integration between data, rules, and interface",
+  },
 ] as const;
 
 export const workProcess = [

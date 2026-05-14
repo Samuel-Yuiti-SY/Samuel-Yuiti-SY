@@ -140,7 +140,7 @@ export function VisualPlayground() {
               <div className="mb-4 flex items-center gap-2 text-[rgb(var(--accent))]">
                 <Palette size={18} />
                 <span className="text-sm font-black">
-                  {language === "pt" ? "Previa visual" : "Visual preview"}
+                  {language === "pt" ? "Prévia visual" : "Visual preview"}
                 </span>
               </div>
               <div className="grid gap-3 sm:grid-cols-3">

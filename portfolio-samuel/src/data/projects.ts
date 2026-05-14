@@ -4,7 +4,7 @@ export const projects = [
   {
     id: "ofx-formatter",
     status: "built" as ProjectStatus,
-    tags: ["OFX", "Dados financeiros", "Automação", "Web app", "Vercel"],
+    tags: ["OFX", "Financial Data", "Automation", "Web app", "Vercel"],
     liveUrl: "https://site-umber-six-63.vercel.app",
     githubUrl: "https://github.com/Samuel-Yuiti-SY/Ofx-Formatter",
     pt: {
@@ -63,13 +63,13 @@ export const projects = [
   {
     id: "carbontrack",
     status: "built" as ProjectStatus,
-    tags: ["Dashboard", "React", "Next.js", "Tailwind", "Dados", "SaaS"],
+    tags: ["Dashboard", "React", "Next.js", "Tailwind", "Data", "SaaS"],
     liveUrl: "https://carbontrack-v2-theta.vercel.app",
     githubUrl: "https://github.com/Samuel-Yuiti-SY/CarbonTrack",
     pt: {
       title: "CarbonTrack — Emissions Intelligence Dashboard",
       description:
-        "Dashboard web para visualização de emissões de CO2, frota, indicadores ambientais e relatórios gerenciais, simulando uma plataforma SaaS para acompanhamento de metas sustentáveis.",
+        "Dashboard web para visualização de emissões de CO₂, frota, indicadores ambientais e relatórios gerenciais, simulando uma plataforma SaaS para acompanhamento de metas sustentáveis.",
       problem:
         "Indicadores ambientais e operacionais precisam de uma interface clara para facilitar acompanhamento, leitura executiva e análise por período.",
       solution:
@@ -96,7 +96,7 @@ export const projects = [
     en: {
       title: "CarbonTrack — Emissions Intelligence Dashboard",
       description:
-        "Web dashboard for visualizing CO2 emissions, fleet data, environmental indicators, and management reports, simulating a SaaS platform for sustainability goal tracking.",
+        "Web dashboard for visualizing CO₂ emissions, fleet data, environmental indicators, and management reports, simulating a SaaS platform for sustainability goal tracking.",
       problem:
         "Environmental and operational indicators need a clear interface for tracking, executive reading, and period-based analysis.",
       solution:
@@ -124,7 +124,7 @@ export const projects = [
   {
     id: "financial-layout-validator",
     status: "future" as ProjectStatus,
-    tags: ["Python", "Validação", "Arquivos"],
+    tags: ["Python", "Validation", "Files"],
     pt: {
       title: "Financial Layout Validator",
       description:
@@ -151,7 +151,7 @@ export const projects = [
   {
     id: "reconciliation-dashboard",
     status: "future" as ProjectStatus,
-    tags: ["Dashboard", "SQL", "Conciliação"],
+    tags: ["Dashboard", "SQL", "Reconciliation"],
     pt: {
       title: "Reconciliation Dashboard",
       description:
@@ -178,7 +178,7 @@ export const projects = [
   {
     id: "transactions-api",
     status: "future" as ProjectStatus,
-    tags: ["Python", "API", "Transações"],
+    tags: ["Python", "API", "Transactions"],
     pt: {
       title: "Transactions API",
       description:

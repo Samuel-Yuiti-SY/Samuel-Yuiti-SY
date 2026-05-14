@@ -10,7 +10,7 @@ export const en = {
   },
   actions: {
     viewProjects: "View projects",
-    downloadResume: "Download resume",
+    downloadResume: "Download CV",
     github: "GitHub",
     linkedin: "LinkedIn",
     contact: "Contact me",
@@ -20,15 +20,26 @@ export const en = {
     repository: "GitHub",
   },
   hero: {
-    status: "Available for opportunities and projects",
-    title: "Python, SQL and Financial Automation Developer",
+    status: "Open to opportunities and projects",
+    title: "Python | SQL | Financial Data | Automation Developer",
+    headline:
+      "I build solutions with Python, SQL, and web technologies to turn financial data into clearer, faster, and more reliable processes.",
     subtitle:
-      "I build solutions to validate files, automate routines, analyze financial data, and turn operational processes into clearer, faster, and more reliable web applications.",
-    role: "Python | SQL | Financial data | Automation",
+      "I work with data analysis, automation, file processing, SQL queries, and modern interface development to solve real operational problems.",
+    profileAlt: "Professional photo of Samuel Yuiti Endo Silva",
+    photoCaption: "Python, SQL, automation, and financial data",
+    pipelineLabel: "Solution pipeline",
+    pipeline: [
+      "SQL diagnosis",
+      "Financial file validation",
+      "Web automation delivery",
+    ],
+    focusLabel: "Focus",
+    focusText: "Data, rules, and interfaces in the same flow.",
     keywords: [
       "Python",
       "SQL",
-      "Automation",
+      "Data Automation",
       "Financial Data",
       "OFX",
       "Dashboards",
@@ -39,10 +50,12 @@ export const en = {
   },
   sections: {
     about: {
-      eyebrow: "About",
+      eyebrow: "About me",
       title:
         "Solutions that connect data, business rules, and user experience.",
       body: "I work on solutions focused on automation, financial data analysis, SQL queries, file processing, and web interfaces.\n\nMy experience is centered on understanding operational processes, investigating inconsistencies, validating database records, and turning manual routines into more organized, traceable, and efficient solutions.\n\nI focus on Python, SQL, MySQL, React, Next.js, and Tailwind CSS, applying these technologies to projects that connect data, business rules, and user experience.",
+      profileSummary:
+        "Python, SQL, automation, and web interfaces applied to financial data.",
     },
     specialties: {
       eyebrow: "Specialties",
@@ -52,15 +65,15 @@ export const en = {
     },
     stack: {
       eyebrow: "Stack and tools",
-      title: "Technologies to build, investigate, and deliver consistently.",
+      title: "Technologies organized by role in the process.",
       description:
-        "Tools used to transform files, queries, and operational rules into automated routines, dashboards, and web applications.",
+        "A focused stack for turning files, queries, and operational rules into automated routines, dashboards, and web applications.",
     },
     projects: {
       eyebrow: "Projects",
-      title: "Featured projects and technical labs.",
+      title: "Published cases and technical labs.",
       description:
-        "A showcase of published solutions, followed by experiments in progress focused on validation, reconciliation, and financial APIs.",
+        "A showcase with two main published projects, followed by smaller experiments focused on validation, reconciliation, and financial APIs.",
       built: "Featured projects",
       future: "Labs",
       labsDescription:
@@ -68,7 +81,8 @@ export const en = {
     },
     experience: {
       eyebrow: "Applied experience",
-      title: "Applied experience in data, automation, and financial processes.",
+      title:
+        "Data, automation, and financial processes connected to development.",
       body: "My work combines data analysis, SQL, automation, and development. I work with inconsistency investigation, financial record validation, file processing, business rule understanding, and solutions that increase process reliability.",
     },
     process: {
@@ -83,9 +97,9 @@ export const en = {
     },
     playground: {
       eyebrow: "Visual playground",
-      title: "Personalize the experience.",
+      title: "Real-time interface customization.",
       description:
-        "Simple controls to experience the portfolio with a different visual tone, language, theme, and density.",
+        "A compact demonstration of how the visual experience can adapt by theme, language, accent color, animation, and density.",
       accent: "Accent color",
       animations: "Animations",
       density: "Visual density",
@@ -98,8 +112,8 @@ export const en = {
     },
     contact: {
       eyebrow: "Contact",
-      title: "Let's build something useful?",
-      body: "I am open to opportunities, projects, and conversations about development, financial data, automation, and web solutions.",
+      title: "Let's turn data into real solutions?",
+      body: "I am open to opportunities, projects, and conversations about development, automation, financial data, and web solutions.",
       name: "Name",
       email: "Email",
       message: "Message",

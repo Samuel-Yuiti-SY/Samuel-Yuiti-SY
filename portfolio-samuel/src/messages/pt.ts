@@ -20,16 +20,27 @@ export const pt = {
     repository: "GitHub",
   },
   hero: {
-    status: "Disponível para oportunidades e projetos",
-    title: "Desenvolvedor Python, SQL e Automação Financeira",
+    status: "Aberto a oportunidades e projetos",
+    title: "Desenvolvedor Python | SQL | Dados Financeiros | Automação",
+    headline:
+      "Desenvolvo soluções com Python, SQL e tecnologia web para transformar dados financeiros em processos mais claros, rápidos e confiáveis.",
     subtitle:
-      "Construo soluções para validar arquivos, automatizar rotinas, analisar dados financeiros e transformar processos operacionais em aplicações web mais claras, rápidas e confiáveis.",
-    role: "Python | SQL | Dados financeiros | Automação",
+      "Atuo com análise de dados, automação, tratamento de arquivos, consultas SQL e desenvolvimento de interfaces modernas para resolver problemas operacionais reais.",
+    profileAlt: "Foto profissional de Samuel Yuiti Endo Silva",
+    photoCaption: "Python, SQL, automação e dados financeiros",
+    pipelineLabel: "Pipeline de solução",
+    pipeline: [
+      "Diagnóstico SQL",
+      "Validação de arquivos financeiros",
+      "Entrega de automação web",
+    ],
+    focusLabel: "Foco",
+    focusText: "Dados, regras e interfaces no mesmo fluxo.",
     keywords: [
       "Python",
       "SQL",
-      "Automação",
-      "Dados Financeiros",
+      "Data Automation",
+      "Financial Data",
       "OFX",
       "Dashboards",
       "APIs",
@@ -39,10 +50,12 @@ export const pt = {
   },
   sections: {
     about: {
-      eyebrow: "Sobre",
+      eyebrow: "Sobre mim",
       title:
         "Soluções que conectam dados, regras de negócio e experiência de uso.",
       body: "Atuo no desenvolvimento de soluções voltadas para automação, análise de dados financeiros, consultas SQL, tratamento de arquivos e interfaces web.\n\nMinha experiência está concentrada em entender processos operacionais, investigar inconsistências, validar informações em banco de dados e transformar rotinas manuais em soluções mais organizadas, rastreáveis e eficientes.\n\nTenho foco em Python, SQL, MySQL, React, Next.js e Tailwind CSS, aplicando essas tecnologias em projetos que conectam dados, regras de negócio e experiência de uso.",
+      profileSummary:
+        "Python, SQL, automação e interfaces web aplicadas a dados financeiros.",
     },
     specialties: {
       eyebrow: "Especialidades",
@@ -52,16 +65,15 @@ export const pt = {
     },
     stack: {
       eyebrow: "Stack e ferramentas",
-      title:
-        "Tecnologias para construir, investigar e entregar com consistência.",
+      title: "Tecnologias organizadas por função no processo.",
       description:
-        "Ferramentas usadas para transformar arquivos, consultas e regras operacionais em rotinas automatizadas, dashboards e aplicações web.",
+        "Uma stack enxuta para transformar arquivos, consultas e regras operacionais em rotinas automatizadas, dashboards e aplicações web.",
     },
     projects: {
       eyebrow: "Projetos",
-      title: "Projetos em destaque e labs técnicos.",
+      title: "Cases publicados e labs técnicos.",
       description:
-        "Uma vitrine de soluções publicadas, seguida por experimentos em andamento com foco em validação, conciliação e APIs financeiras.",
+        "Uma vitrine com dois projetos principais publicados, seguida por experimentos menores focados em validação, conciliação e APIs financeiras.",
       built: "Projetos em destaque",
       future: "Labs",
       labsDescription:
@@ -70,7 +82,7 @@ export const pt = {
     experience: {
       eyebrow: "Experiência aplicada",
       title:
-        "Experiência aplicada em dados, automação e processos financeiros.",
+        "Dados, automação e processos financeiros conectados ao desenvolvimento.",
       body: "Minha atuação combina análise de dados, SQL, automação e desenvolvimento. Trabalho com investigação de inconsistências, validação de registros financeiros, leitura de arquivos, entendimento de regras de negócio e criação de soluções que aumentam a confiabilidade dos processos.",
     },
     process: {
@@ -85,9 +97,9 @@ export const pt = {
     },
     playground: {
       eyebrow: "Playground visual",
-      title: "Personalize a experiência.",
+      title: "Personalização da interface em tempo real.",
       description:
-        "Ajustes simples para experimentar o portfólio com outro tom visual, idioma, tema e densidade.",
+        "Uma demonstração compacta de como a experiência visual pode se adaptar por tema, idioma, cor, animação e densidade.",
       accent: "Cor de destaque",
       animations: "Animações",
       density: "Densidade visual",
@@ -100,8 +112,8 @@ export const pt = {
     },
     contact: {
       eyebrow: "Contato",
-      title: "Vamos construir algo útil?",
-      body: "Estou aberto a oportunidades, projetos e conversas sobre desenvolvimento, dados financeiros, automação e soluções web.",
+      title: "Vamos transformar dados em soluções reais?",
+      body: "Estou aberto a oportunidades, projetos e conversas sobre desenvolvimento, automação, dados financeiros e soluções web.",
       name: "Nome",
       email: "E-mail",
       message: "Mensagem",
