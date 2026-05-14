@@ -28,7 +28,7 @@ My work is centered on making operational data easier to validate, normalize and
 
 - Backend development with Python, TypeScript and serverless APIs
 - Financial data processing, normalization and validation
-- SQL investigation for reconciliation and production support
+- SQL investigation for reconciliation and process validation
 - File parsing for bank statements, operator layouts and business imports
 - Internal tools, dashboards and automation for operational workflows
 - Deployment and version control with Vercel, Git and GitHub
