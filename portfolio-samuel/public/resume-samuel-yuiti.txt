@@ -1,0 +1,26 @@
+Samuel Yuiti Endo Silva
+Python Developer | SQL | Financial Data | Automation
+
+Contact
+Email: samuelyuit@gmail.com
+LinkedIn: https://www.linkedin.com/in/samuelyuiti/
+GitHub: https://github.com/Samuel-Yuiti-SY
+
+Professional Summary
+Developer focused on Python, SQL, financial data analysis, process automation,
+file processing, and web solutions. Practical experience with technical support,
+database analysis, SQL queries, investigation of financial inconsistencies, and
+solutions that reduce manual operational work.
+
+Core Skills
+- Python automation and scripting
+- SQL queries and data validation
+- Financial data analysis and file processing
+- Bank statement and operational file normalization
+- Web interfaces with React, Next.js, and Tailwind CSS
+- Git, GitHub, Vercel, VS Code, pgAdmin, and DataGrip
+
+Selected Projects
+- OFX Formatter: web tool for correcting and standardizing Caixa OFX files.
+- CarbonTrack: dashboard for CO2 emissions monitoring and fleet indicators.
+

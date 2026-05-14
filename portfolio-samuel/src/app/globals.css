@@ -1,0 +1,224 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --accent: 34 211 238;
+  --accent-solid: #22d3ee;
+  --background: #020617;
+  --foreground: #f8fafc;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+}
+
+body {
+  background:
+    linear-gradient(180deg, rgba(15, 23, 42, 0.38), transparent 26rem),
+    var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: rgba(var(--accent), 0.28);
+  color: #ffffff;
+}
+
+.section-space {
+  padding-block: 7rem;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.07) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+.glass-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.075),
+      rgba(255, 255, 255, 0.035)
+    ),
+    rgba(15, 23, 42, 0.72);
+  box-shadow: 0 24px 90px rgba(2, 6, 23, 0.3);
+  backdrop-filter: blur(18px);
+}
+
+.accent-bg {
+  background: rgb(var(--accent));
+}
+
+.accent-soft {
+  background: rgba(var(--accent), 0.1);
+}
+
+.accent-border {
+  border-color: rgba(var(--accent), 0.32);
+}
+
+.input-field {
+  min-height: 3.25rem;
+  width: 100%;
+  border-radius: 0.875rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.875rem 1rem;
+  color: #f8fafc;
+  outline: none;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease;
+}
+
+.input-field::placeholder {
+  color: rgba(203, 213, 225, 0.6);
+}
+
+.input-field:focus {
+  border-color: rgba(var(--accent), 0.72);
+  box-shadow: 0 0 0 4px rgba(var(--accent), 0.12);
+}
+
+.light body {
+  background:
+    linear-gradient(180deg, rgba(226, 232, 240, 0.7), transparent 24rem),
+    #f8fafc;
+  color: #0f172a;
+}
+
+.light .grid-bg {
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.07) 1px, transparent 1px);
+}
+
+.light .light-header {
+  border-color: rgba(15, 23, 42, 0.09);
+  background: rgba(248, 250, 252, 0.84);
+}
+
+.light .glass-card,
+.light .light-card {
+  border-color: rgba(15, 23, 42, 0.1);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.92),
+      rgba(255, 255, 255, 0.72)
+    ),
+    rgba(255, 255, 255, 0.84);
+  box-shadow: 0 24px 90px rgba(15, 23, 42, 0.08);
+}
+
+.light .light-inner-panel {
+  border-color: rgba(15, 23, 42, 0.1);
+  background:
+    linear-gradient(
+      160deg,
+      rgba(255, 255, 255, 0.96),
+      rgba(226, 232, 240, 0.75)
+    ),
+    #ffffff;
+}
+
+.light .light-border {
+  border-color: rgba(15, 23, 42, 0.1);
+}
+
+.light .light-text {
+  color: #0f172a;
+}
+
+.light .light-text-muted {
+  color: #475569;
+}
+
+.light .light-watermark {
+  color: rgba(15, 23, 42, 0.06);
+}
+
+.light .input-field {
+  border-color: rgba(15, 23, 42, 0.12);
+  background: rgba(255, 255, 255, 0.82);
+  color: #0f172a;
+}
+
+.light .input-field::placeholder {
+  color: rgba(71, 85, 105, 0.62);
+}
+
+.compact-density .section-space {
+  padding-block: 4.75rem;
+}
+
+.motion-off *,
+.motion-off *::before,
+.motion-off *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  scroll-behavior: auto !important;
+  transition-duration: 0.001ms !important;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-33.333%);
+  }
+}
+
+@keyframes marquee-reverse {
+  from {
+    transform: translateX(-33.333%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 34s linear infinite;
+}
+
+.animate-marquee-reverse {
+  animation: marquee-reverse 38s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-space {
+    padding-block: 5rem;
+  }
+}
