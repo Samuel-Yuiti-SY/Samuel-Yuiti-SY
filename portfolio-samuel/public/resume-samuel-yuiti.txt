@@ -1,25 +1,62 @@
 Samuel Yuiti Endo Silva
-Python Developer | SQL | Financial Data | Automation
+Desenvolvedor Python | SQL | Dados Financeiros | Automação
 
-Contact
-Email: samuelyuit@gmail.com
+Contato
+E-mail: samuelyuit@gmail.com
 LinkedIn: https://www.linkedin.com/in/samuelyuiti/
 GitHub: https://github.com/Samuel-Yuiti-SY
+Portfólio: https://samuel-yuiti-portfolio.vercel.app
 
-Professional Summary
-Developer focused on Python, SQL, financial data analysis, process automation,
-file processing, and web solutions. Practical experience with database analysis,
-SQL queries, investigation of financial inconsistencies, process validation, and
-solutions that reduce manual operational work.
+Resumo profissional
+Desenvolvedor com foco em Python, SQL, análise de dados financeiros, automação
+de processos, tratamento de arquivos e construção de soluções web. Atuação
+voltada para entender processos operacionais, investigar inconsistências,
+validar registros em banco de dados e transformar rotinas manuais em fluxos mais
+claros, rastreáveis e confiáveis.
 
-Core Skills
-- Python automation and scripting
-- SQL queries and data validation
-- Financial data analysis and file processing
-- Bank statement and operational file normalization
-- Web interfaces with React, Next.js, and Tailwind CSS
-- Git, GitHub, Vercel, VS Code, pgAdmin, and DataGrip
+Competências técnicas
+- Python para automação, scripts, validações e tratamento de arquivos
+- SQL para consultas, investigação de registros e validação de dados
+- MySQL e PostgreSQL para análise e apoio a processos financeiros
+- React, Next.js, TypeScript e Tailwind CSS para interfaces web modernas
+- Git, GitHub, Vercel, VS Code, pgAdmin e DataGrip
+- Leitura, padronização e validação de arquivos financeiros
+- Dashboards, indicadores e visualização de dados operacionais
 
-Selected Projects
-- OFX Formatter: web tool for correcting and standardizing Caixa OFX files.
-- CarbonTrack: dashboard for CO2 emissions monitoring and fleet indicators.
+Experiência aplicada
+- Análise de dados financeiros e identificação de inconsistências
+- Consultas SQL para validação de registros, pagamentos e movimentações
+- Tratamento de arquivos, layouts e informações semi-estruturadas
+- Automação de rotinas operacionais com foco em redução de retrabalho
+- Diagnóstico técnico orientado a dados e regras de negócio
+- Organização de documentação técnica e melhoria contínua de processos
+- Integração entre dados, regras e interfaces para uso operacional
+
+Projetos públicos
+
+OFX Formatter — Correção de Extratos Caixa
+Aplicação web para correção, padronização e exportação de arquivos OFX, criada
+para facilitar o tratamento de extratos financeiros e reduzir erros de leitura em
+sistemas de análise ou conciliação.
+Principais pontos: upload e validação de arquivo OFX, correção de estrutura e
+tags, normalização de datas e timezone, processamento em memória, download do
+arquivo corrigido e deploy na Vercel.
+Demo: https://site-umber-six-63.vercel.app
+Código: https://github.com/Samuel-Yuiti-SY/Ofx-Formatter
+
+CarbonTrack — Emissions Intelligence Dashboard
+Dashboard web para visualização de emissões de CO2, frota, indicadores
+ambientais e relatórios gerenciais, simulando uma plataforma SaaS para
+acompanhamento de metas sustentáveis.
+Principais pontos: KPIs, visualização de emissões, gestão simulada de frota,
+relatórios ambientais, interface responsiva e tema claro/escuro.
+Demo: https://carbontrack-v2-theta.vercel.app
+Código: https://github.com/Samuel-Yuiti-SY/CarbonTrack
+
+Formação
+Análise e Desenvolvimento de Sistemas — em andamento
+
+Objetivo
+Atuar em projetos de desenvolvimento Python, SQL, automação, análise de dados,
+tratamento de arquivos, dashboards e aplicações web que resolvam problemas
+operacionais reais.

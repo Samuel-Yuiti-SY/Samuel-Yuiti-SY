@@ -97,7 +97,7 @@ export function Hero() {
               {t.actions.viewProjects}
             </MagneticButton>
             <MagneticButton
-              href="/resume-samuel-yuiti.txt"
+              href="/resume-samuel-yuiti.pdf"
               download
               icon={<Download size={18} />}
             >
@@ -142,12 +142,12 @@ export function Hero() {
           initial={reducedMotion ? false : { opacity: 0, scale: 0.96, y: 30 }}
           animate={reducedMotion ? undefined : { opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.18 }}
-          className="relative mx-auto min-h-[560px] w-full max-w-[34rem] lg:min-h-[610px]"
+          className="relative mx-auto min-h-[640px] w-full max-w-[38rem] lg:min-h-[690px]"
         >
-          <div className="absolute inset-x-10 top-8 h-[32rem] rounded-[2.5rem] bg-[linear-gradient(135deg,rgba(var(--accent),0.34),rgba(34,197,94,0.18),transparent)] blur-3xl" />
+          <div className="absolute inset-x-8 top-6 h-[34rem] rounded-[2.5rem] bg-[linear-gradient(135deg,rgba(var(--accent),0.34),rgba(34,197,94,0.18),transparent)] blur-3xl" />
 
-          <div className="relative mx-auto rounded-[2rem] border border-white/10 bg-white/[0.07] p-3 shadow-[0_32px_120px_rgba(2,6,23,0.5)] backdrop-blur-2xl light-border light-card">
-            <div className="relative overflow-hidden rounded-[1.55rem] border border-white/10 bg-slate-950 light-border light-inner-panel">
+          <div className="relative z-10 mx-auto w-[min(100%,32rem)] rounded-[2rem] border border-white/10 bg-white/[0.07] p-3 shadow-[0_32px_120px_rgba(2,6,23,0.5)] backdrop-blur-2xl light-border light-card">
+            <div className="overflow-hidden rounded-[1.55rem] border border-white/10 bg-slate-950 light-border light-inner-panel">
               <Image
                 src="/images/samuel-profile.png"
                 alt={t.hero.profileAlt}
@@ -155,41 +155,21 @@ export function Hero() {
                 height={640}
                 priority
                 sizes="(min-width: 1024px) 38vw, 92vw"
-                className="aspect-[4/5] h-auto w-full object-cover"
-                style={{ objectPosition: "center 18%" }}
+                className="aspect-[3/4] h-auto w-full object-cover"
+                style={{ objectPosition: "center 12%" }}
               />
-              <div className="absolute inset-x-0 bottom-0 bg-[linear-gradient(180deg,transparent,rgba(2,6,23,0.92))] p-6">
-                <p className="text-sm font-black uppercase text-[rgb(var(--accent))]">
-                  Samuel Yuiti Endo Silva
-                </p>
-                <p className="mt-2 text-lg font-black text-white">
-                  {t.hero.photoCaption}
-                </p>
-              </div>
+            </div>
+            <div className="px-3 py-4">
+              <p className="text-sm font-black uppercase text-[rgb(var(--accent))]">
+                Samuel Yuiti Endo Silva
+              </p>
+              <p className="mt-2 text-lg font-black text-white light-text">
+                {t.hero.photoCaption}
+              </p>
             </div>
           </div>
 
-          <div className="absolute -bottom-2 left-0 max-w-[18rem] rounded-2xl border border-white/10 bg-slate-950/85 p-5 shadow-2xl backdrop-blur-xl light-border light-card">
-            <p className="text-xs font-black uppercase text-[rgb(var(--accent))]">
-              {t.hero.pipelineLabel}
-            </p>
-            <div className="mt-4 space-y-3 text-sm font-bold text-slate-300 light-text-muted">
-              {t.hero.pipeline.map((item) => (
-                <p key={item}>{item}</p>
-              ))}
-            </div>
-          </div>
-
-          <div className="absolute -right-1 top-10 hidden max-w-[12rem] rounded-2xl border border-white/10 bg-white/10 p-4 shadow-2xl backdrop-blur-xl light-border light-card sm:block">
-            <p className="text-xs font-black uppercase text-slate-400 light-text-muted">
-              {t.hero.focusLabel}
-            </p>
-            <p className="mt-2 text-sm font-black leading-6 text-white light-text">
-              {t.hero.focusText}
-            </p>
-          </div>
-
-          {t.hero.keywords.slice(0, 4).map((keyword, index) => (
+          {t.hero.keywords.slice(0, 6).map((keyword, index) => (
             <motion.span
               key={keyword}
               animate={
@@ -204,19 +184,24 @@ export function Hero() {
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-              className="absolute rounded-2xl border border-white/10 bg-white/10 px-4 py-3 text-sm font-black text-white shadow-xl backdrop-blur light-border light-card light-text"
-              style={{
-                left: index % 2 === 0 ? `${2 + index * 10}%` : "auto",
-                right: index % 2 === 1 ? `${4 + index * 5}%` : "auto",
-                top: `${index * 18 + 1}%`,
-              }}
+              className={[
+                "absolute z-20 hidden rounded-2xl border border-white/10 bg-slate-950/85 px-4 py-3 text-sm font-black text-white shadow-xl backdrop-blur light-border light-card light-text sm:inline-flex",
+                [
+                  "-left-20 top-8",
+                  "-right-16 top-16",
+                  "-left-24 top-[42%]",
+                  "-right-20 top-[47%]",
+                  "-left-12 bottom-28",
+                  "-right-10 bottom-20",
+                ][index],
+              ].join(" ")}
             >
               {keyword}
             </motion.span>
           ))}
 
-          <div className="absolute bottom-12 right-0 grid grid-cols-3 gap-3">
-            {["Python", "SQL", "Next.js"].map((item) => (
+          <div className="relative z-20 mx-auto mt-5 grid w-[min(100%,32rem)] gap-3 sm:grid-cols-3">
+            {t.hero.pipeline.map((item) => (
               <div
                 key={item}
                 className="rounded-xl border border-white/10 bg-white/10 p-3 text-center text-xs font-black text-white backdrop-blur light-border light-card light-text"
@@ -224,6 +209,15 @@ export function Hero() {
                 {item}
               </div>
             ))}
+          </div>
+
+          <div className="relative z-20 mx-auto mt-4 w-[min(100%,32rem)] rounded-2xl border border-white/10 bg-white/[0.06] p-4 text-center shadow-2xl backdrop-blur-xl light-border light-card">
+            <p className="text-xs font-black uppercase text-slate-400 light-text-muted">
+              {t.hero.focusLabel}
+            </p>
+            <p className="mt-2 text-sm font-black leading-6 text-white light-text">
+              {t.hero.focusText}
+            </p>
           </div>
         </motion.div>
       </Container>
