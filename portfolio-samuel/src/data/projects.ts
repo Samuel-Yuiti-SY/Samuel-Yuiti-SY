@@ -5,7 +5,7 @@ export const projects = [
     id: "ofx-formatter",
     status: "built" as ProjectStatus,
     tags: ["OFX", "Financial Data", "Automation", "Web app", "Vercel"],
-    liveUrl: "https://site-umber-six-63.vercel.app",
+    liveUrl: "https://site-extratos-ofx.vercel.app",
     githubUrl: "https://github.com/Samuel-Yuiti-SY/Ofx-Formatter",
     pt: {
       title: "OFX Formatter — Correção de Extratos Caixa",
@@ -119,6 +119,66 @@ export const projects = [
       ],
       future:
         "Evolve filters, interactive charts, demo data persistence, and authentication.",
+    },
+  },
+  {
+    id: "gamedex",
+    status: "built" as ProjectStatus,
+    tags: ["Next.js", "Prisma", "PostgreSQL", "Games", "Vercel"],
+    liveUrl: "https://site-umber-six-63.vercel.app",
+    pt: {
+      title: "GameDex — Catálogo inteligente de jogos de PC",
+      description:
+        "Aplicação web full-stack para catalogar jogos de PC, importar dados por nome ou link da Steam, organizar favoritos, comparar preços e simular uma experiência de produto com autenticação e painel admin.",
+      problem:
+        "Catálogos de jogos podem ficar espalhados entre lojas, avaliações, preços e dados de plataformas, dificultando comparação e organização.",
+      solution:
+        "Uma aplicação com busca, importação, catálogo, favoritos, perfil, painel admin, autenticação e estrutura preparada para integrar fontes externas.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Prisma",
+        "PostgreSQL",
+        "Tailwind CSS",
+        "Vercel",
+      ],
+      features: [
+        "Catálogo com busca e filtros",
+        "Importação por nome ou link da Steam",
+        "Favoritos e perfil",
+        "Painel admin simples",
+        "Autenticação com JWT",
+        "Fallback mockado para desenvolvimento",
+      ],
+      future:
+        "Publicar repositório, evoluir integrações externas, alertas de preço e rotinas agendadas de atualização.",
+    },
+    en: {
+      title: "GameDex — Smart PC game catalog",
+      description:
+        "Full-stack web application for cataloging PC games, importing data by name or Steam link, organizing favorites, comparing prices, and simulating a product experience with authentication and admin screens.",
+      problem:
+        "Game catalogs can be scattered across stores, reviews, prices, and platform data, making comparison and organization harder.",
+      solution:
+        "An application with search, import flow, catalog, favorites, profile, admin screen, authentication, and a structure prepared for external data sources.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Prisma",
+        "PostgreSQL",
+        "Tailwind CSS",
+        "Vercel",
+      ],
+      features: [
+        "Catalog with search and filters",
+        "Import by name or Steam link",
+        "Favorites and profile",
+        "Simple admin panel",
+        "JWT authentication",
+        "Mock fallback for development",
+      ],
+      future:
+        "Publish repository, evolve external integrations, price alerts, and scheduled update routines.",
     },
   },
   {

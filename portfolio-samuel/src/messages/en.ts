@@ -73,7 +73,7 @@ export const en = {
       eyebrow: "Projects",
       title: "Published cases and technical labs.",
       description:
-        "A showcase with two main published projects, followed by smaller experiments focused on validation, reconciliation, and financial APIs.",
+        "A showcase with published projects, followed by smaller experiments focused on validation, reconciliation, and financial APIs.",
       built: "Featured projects",
       future: "Labs",
       labsDescription:

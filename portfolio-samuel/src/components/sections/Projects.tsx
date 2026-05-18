@@ -4,6 +4,7 @@ import {
   ArrowUpRight,
   BarChart3,
   FileCheck2,
+  Gamepad2,
   GitBranch,
   Sparkles,
 } from "lucide-react";
@@ -275,6 +276,43 @@ function ProjectMockup({
                 />
               </div>
               <p className="mt-3 text-xs font-bold text-slate-300">{label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  if (projectId === "gamedex") {
+    const rows =
+      language === "pt"
+        ? ["Importação Steam", "Catálogo PC", "Comparação de preços"]
+        : ["Steam import", "PC catalog", "Price comparison"];
+
+    return (
+      <div className="mt-7 rounded-2xl border border-white/10 bg-slate-950/70 p-4 shadow-2xl light-border">
+        <div className="mb-4 flex items-center justify-between">
+          <div className="flex items-center gap-2 text-[rgb(var(--accent))]">
+            <Gamepad2 size={18} />
+            <span className="text-xs font-black uppercase">
+              {language === "pt" ? "Preview produto" : "Product preview"}
+            </span>
+          </div>
+          <span className="rounded-full bg-violet-400/12 px-3 py-1 text-xs font-black text-violet-300">
+            PC only
+          </span>
+        </div>
+        <div className="grid gap-3">
+          {rows.map((row, itemIndex) => (
+            <div
+              key={row}
+              className="grid grid-cols-[auto_1fr_auto] items-center gap-3 rounded-xl border border-white/10 bg-white/[0.07] px-3 py-2 light-border"
+            >
+              <span className="accent-bg inline-flex h-7 w-7 items-center justify-center rounded-lg text-xs font-black text-slate-950">
+                {itemIndex + 1}
+              </span>
+              <span className="text-xs font-bold text-slate-300">{row}</span>
+              <span className="h-2 w-14 rounded-full bg-[rgb(var(--accent))]" />
             </div>
           ))}
         </div>

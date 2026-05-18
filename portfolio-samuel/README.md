@@ -1,47 +1,48 @@
 # Samuel Yuiti Portfolio
 
-Professional developer portfolio for Samuel Yuiti Endo Silva, focused on Python, SQL, financial data analysis, process automation, file processing, and modern web solutions.
+Portfólio profissional de Samuel Yuiti Endo Silva, com foco em Python, SQL, automação, dados financeiros, tratamento de arquivos e aplicações web.
 
-This portfolio was inspired by modern visual experiences from developers and designers, but it has its own structure, content, visual identity, and implementation.
+Site em produção:
 
-## Objective
+https://samuel-yuiti-portfolio.vercel.app
 
-Create a premium, responsive, bilingual portfolio with a strong technical identity around financial data, automation, Python, SQL, dashboards, and web interfaces. The project is ready for deployment on Vercel.
+## O que tem no projeto
 
-## Technologies
+- Landing page em Next.js com App Router.
+- Alternância entre português e inglês.
+- Tema claro e escuro com persistência.
+- Hero com foto profissional e animações leves.
+- Seção de projetos publicados e labs técnicos.
+- Currículo em PDF disponível para download.
+- Formulário de contato via `mailto`.
+- Layout responsivo para desktop e mobile.
+
+## Projetos exibidos
+
+- OFX Formatter: https://site-extratos-ofx.vercel.app
+- CarbonTrack: https://carbontrack-v2-theta.vercel.app
+- GameDex: https://site-umber-six-63.vercel.app
+- Portfólio: https://samuel-yuiti-portfolio.vercel.app
+
+## Stack
 
 - Next.js
 - React
 - TypeScript
 - Tailwind CSS
-- App Router
 - Framer Motion
-- GSAP with ScrollTrigger
 - lucide-react
 - next-themes
+- Vercel
 
-## Features
-
-- Dark theme by default with light theme support
-- Portuguese and English language toggle
-- Scroll-based animation and layered hero effects
-- Animated technology marquee
-- Featured projects and Labs separated visually
-- Practical experience section
-- Animated vertical work process timeline
-- FAQ accordion
-- Visual playground for theme, language, accent color, animation preference, and density
-- Contact form prepared for future integration through mailto
-- Accessible, responsive layout
-
-## Run Locally
+## Rodar localmente
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open:
+Acesse:
 
 ```text
 http://localhost:3000
@@ -53,7 +54,7 @@ http://localhost:3000
 npm run build
 ```
 
-## Deploy on Vercel
+## Deploy na Vercel
 
 ```bash
 npm install
@@ -61,16 +62,13 @@ npm run build
 npx vercel deploy --prod
 ```
 
-You can also import the repository in the Vercel dashboard and use the default Next.js settings.
+Também é possível importar o repositório no painel da Vercel e manter as configurações padrão para Next.js.
 
-## Folder Structure
+## Estrutura
 
 ```text
 src/
   app/
-    layout.tsx
-    page.tsx
-    globals.css
   components/
     common/
     effects/
@@ -81,16 +79,14 @@ src/
   hooks/
   lib/
   messages/
+public/
+  images/
+  resume-samuel-yuiti.pdf
 ```
 
-## Visual Inspiration
+## Próximos ajustes
 
-The project uses modern portfolio design principles such as bold typography, scroll motion, elegant cards, soft transitions, layered sections, and a visual personalization area. It does not copy layout, text, brand, identity, proprietary elements, or exact structure from any reference site.
-
-## Future Improvements
-
-- Add a PDF resume
-- Add analytics and performance monitoring
-- Add a real contact form endpoint
-- Add more case studies with screenshots
-- Add automated tests for key UI behavior
+- Adicionar screenshots reais dos projetos.
+- Criar página individual para cada case.
+- Integrar formulário de contato com endpoint real.
+- Adicionar testes de interface para alternância de tema/idioma.

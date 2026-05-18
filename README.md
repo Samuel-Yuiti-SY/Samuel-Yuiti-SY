@@ -1,71 +1,80 @@
 <h1 align="center">Samuel Yuiti Endo Silva</h1>
 
 <p align="center">
-  Backend Developer focused on financial data processing, reconciliation workflows, automation and ERP integrations.
+  Desenvolvedor com foco em Python, SQL, automação, dados financeiros e aplicações web.
 </p>
 
 <p align="center">
   <a href="https://samuel-yuiti-portfolio.vercel.app" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-137B63?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
+    <img src="https://img.shields.io/badge/Portf%C3%B3lio-0f766e?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfólio" />
   </a>
   <a href="https://www.linkedin.com/in/samuelyuiti/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="mailto:samuelyuit@gmail.com">
-    <img src="https://img.shields.io/badge/Email-17201C?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    <img src="https://img.shields.io/badge/E--mail-17201C?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail" />
   </a>
 </p>
 
 ---
 
-## About
+## Sobre
 
-I build practical backend tools for data-heavy business operations, with a strong focus on financial file processing, reconciliation routines, SQL-based investigation and ERP-related workflows.
+Trabalho com soluções voltadas para automação, análise de dados financeiros, consultas SQL, tratamento de arquivos e interfaces web.
 
-My work is centered on making operational data easier to validate, normalize and move safely between systems. I enjoy building focused solutions that reduce manual work, improve consistency and support teams that depend on reliable transactional information.
+Gosto de pegar processos manuais ou confusos e transformar em ferramentas mais claras: validar arquivos, consultar registros, organizar dados, criar telas e reduzir retrabalho. Meu foco hoje está principalmente em Python, SQL, Next.js, React, TypeScript e Tailwind CSS.
 
-## Core Skills
-
-- Backend development with Python, TypeScript and serverless APIs
-- Financial data processing, normalization and validation
-- SQL investigation for reconciliation and process validation
-- File parsing for bank statements, operator layouts and business imports
-- Internal tools, dashboards and automation for operational workflows
-- Deployment and version control with Vercel, Git and GitHub
-
-## Tech Stack
+## Stack
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,typescript,react,nextjs,flask,postgres,git,github,vercel" height="48" alt="Technology stack icons" />
+  <img src="https://skillicons.dev/icons?i=python,typescript,javascript,react,nextjs,tailwind,flask,postgres,mysql,git,github,vercel,vscode" height="48" alt="Stack: Python, TypeScript, JavaScript, React, Next.js, Tailwind, Flask, PostgreSQL, MySQL, Git, GitHub, Vercel e VS Code" />
 </div>
 
-## Featured Projects
+## Projetos
 
-### OFX Formatter
+### OFX Formatter — Correção de Extratos Caixa
 
-Web tool for validating, correcting and normalizing Caixa bank statement files in OFX format, with in-memory processing and a responsive interface.
+Aplicação web para corrigir, padronizar e exportar arquivos `.ofx` da Caixa. O objetivo é facilitar o tratamento de extratos financeiros e evitar erro de leitura em sistemas de análise ou conciliação.
 
-- Live: https://site-umber-six-63.vercel.app
-- Repository: https://github.com/Samuel-Yuiti-SY/Ofx-Formatter
-- Stack: Next.js, React, TypeScript, Tailwind CSS, Vercel
+- Demo: https://site-extratos-ofx.vercel.app
+- Código: https://github.com/Samuel-Yuiti-SY/Ofx-Formatter
+- Stack: Next.js, React, TypeScript, Tailwind CSS, API Route, Vercel
 
-### CarbonTrack
+### CarbonTrack — Dashboard de Emissões
 
-Demonstration dashboard for environmental indicators, fleet management and emissions reporting, originally built in Flask with a modern Next.js version deployed on Vercel.
+Dashboard demonstrativo para acompanhar emissões de CO2, frota, indicadores ambientais e relatórios. O projeto começou em Flask e ganhou uma versão mais moderna em Next.js.
 
-- Live: https://carbontrack-v2-theta.vercel.app
-- Repository: https://github.com/Samuel-Yuiti-SY/CarbonTrack
+- Demo: https://carbontrack-v2-theta.vercel.app
+- Código: https://github.com/Samuel-Yuiti-SY/CarbonTrack
 - Stack: Python, Flask, Next.js, React, TypeScript, Tailwind CSS
 
-## Current Focus
+### GameDex — Catálogo de Jogos de PC
 
-- Automation for reconciliation processes
-- Financial data standardization and validation
-- Backend services for internal tools and operational systems
-- Scalable ingestion workflows for structured and semi-structured files
+Aplicação web full-stack para catalogar jogos de PC, importar dados por nome ou link da Steam, organizar favoritos, comparar preços e simular uma experiência de produto com autenticação, painel admin e banco de dados.
 
-## Portfolio
+- Demo: https://site-umber-six-63.vercel.app
+- Stack: Next.js, TypeScript, Tailwind CSS, Prisma, PostgreSQL, JWT, Zod, Recharts, Vercel
+- Status: projeto em organização para publicação do repositório
 
-My portfolio is available at:
+### Portfólio Profissional
 
-**https://samuel-yuiti-portfolio.vercel.app**
+Meu site pessoal, com versão em português e inglês, tema claro/escuro, currículo em PDF, projetos publicados e foco em Python, SQL, dados financeiros e automação.
+
+- Site: https://samuel-yuiti-portfolio.vercel.app
+- Código: https://github.com/Samuel-Yuiti-SY/Samuel-Yuiti-SY
+- Stack: Next.js, React, TypeScript, Tailwind CSS, Framer Motion, Vercel
+
+## No que estou focando agora
+
+- Automação de rotinas financeiras
+- Validação e padronização de arquivos
+- Consultas SQL para análise de inconsistências
+- Dashboards e interfaces para leitura de dados
+- APIs e ferramentas internas com Python e tecnologias web
+
+## Contato
+
+- Portfólio: https://samuel-yuiti-portfolio.vercel.app
+- LinkedIn: https://www.linkedin.com/in/samuelyuiti/
+- GitHub: https://github.com/Samuel-Yuiti-SY
+- E-mail: samuelyuit@gmail.com

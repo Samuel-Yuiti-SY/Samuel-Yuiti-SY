@@ -73,7 +73,7 @@ export const pt = {
       eyebrow: "Projetos",
       title: "Cases publicados e labs técnicos.",
       description:
-        "Uma vitrine com dois projetos principais publicados, seguida por experimentos menores focados em validação, conciliação e APIs financeiras.",
+        "Uma vitrine com projetos publicados, seguida por experimentos menores focados em validação, conciliação e APIs financeiras.",
       built: "Projetos em destaque",
       future: "Labs",
       labsDescription:
