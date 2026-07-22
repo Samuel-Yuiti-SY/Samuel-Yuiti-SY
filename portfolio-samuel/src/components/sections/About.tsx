@@ -25,7 +25,7 @@ export function About() {
             <div className="mt-8 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.05] p-3 shadow-2xl backdrop-blur light-border light-card">
               <div className="grid gap-4 sm:grid-cols-[6.5rem_1fr] sm:items-center">
                 <Image
-                  src="/images/samuel-profile.png"
+                  src="/images/samuel-profile-2026-07.png"
                   alt={t.hero.profileAlt}
                   width={140}
                   height={180}

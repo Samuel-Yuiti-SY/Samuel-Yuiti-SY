@@ -97,8 +97,8 @@ export function Hero() {
               {t.actions.viewProjects}
             </MagneticButton>
             <MagneticButton
-              href="/resume-samuel-yuiti.pdf"
-              download
+              href="/api/curriculo"
+              download="Curriculo_Samuel_Yuiti_Desenvolvedor.pdf"
               icon={<Download size={18} />}
             >
               {t.actions.downloadResume}
@@ -149,7 +149,7 @@ export function Hero() {
           <div className="relative z-10 mx-auto w-[min(100%,32rem)] rounded-[2rem] border border-white/10 bg-white/[0.07] p-3 shadow-[0_32px_120px_rgba(2,6,23,0.5)] backdrop-blur-2xl light-border light-card">
             <div className="overflow-hidden rounded-[1.55rem] border border-white/10 bg-slate-950 light-border light-inner-panel">
               <Image
-                src="/images/samuel-profile.png"
+                src="/images/samuel-profile-2026-07.png"
                 alt={t.hero.profileAlt}
                 width={520}
                 height={640}
