@@ -55,8 +55,9 @@ export function Header() {
           <LanguageToggle compact />
           <ThemeToggle />
           <MagneticButton
-            href="/resume-samuel-yuiti.pdf"
-            download
+            href="/resume-samuel-yuiti.html"
+            target="_blank"
+            rel="noreferrer"
             variant="primary"
             icon={<Download size={17} />}
             className="min-h-11 px-4"
