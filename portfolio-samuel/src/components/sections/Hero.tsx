@@ -97,8 +97,9 @@ export function Hero() {
               {t.actions.viewProjects}
             </MagneticButton>
             <MagneticButton
-              href="/resume-samuel-yuiti.pdf"
-              download
+              href="/resume-samuel-yuiti.html"
+              target="_blank"
+              rel="noreferrer"
               icon={<Download size={18} />}
             >
               {t.actions.downloadResume}
