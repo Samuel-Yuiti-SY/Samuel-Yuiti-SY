@@ -1,62 +1,54 @@
-﻿Samuel Yuiti Endo Silva
-Desenvolvedor Python | SQL | Dados Financeiros | AutomaÃ§Ã£o
+Samuel Yuiti Endo Silva
+Desenvolvedor Backend Júnior | Python | SQL | Java em formação
 
-Contato
+Maringá - PR
 E-mail: samuelyuit@gmail.com
 LinkedIn: https://www.linkedin.com/in/samuelyuiti/
 GitHub: https://github.com/Samuel-Yuiti-SY
-PortfÃ³lio: https://samuel-yuiti-portfolio.vercel.app
+Portfólio: https://samuel-yuiti-portfolio.vercel.app
 
-Resumo profissional
-Desenvolvedor com foco em Python, SQL, anÃ¡lise de dados financeiros, automaÃ§Ã£o
-de processos, tratamento de arquivos e construÃ§Ã£o de soluÃ§Ãµes web. AtuaÃ§Ã£o
-voltada para entender processos operacionais, investigar inconsistÃªncias,
-validar registros em banco de dados e transformar rotinas manuais em fluxos mais
-claros, rastreÃ¡veis e confiÃ¡veis.
+RESUMO PROFISSIONAL
+Desenvolvedor backend com experiência profissional em Python, leitura e processamento de arquivos estruturados, validação de dados e suporte a sistemas financeiros. Evolução interna de estágio a Analista de Suporte Pleno e, posteriormente, Desenvolvedor Júnior na Conciflex. Conhecimento em SQL, MySQL/PostgreSQL, automação e investigação de inconsistências. Cursando Análise e Desenvolvimento de Sistemas e aprofundando conhecimentos em Java.
 
-CompetÃªncias tÃ©cnicas
-- Python para automaÃ§Ã£o, scripts, validaÃ§Ãµes e tratamento de arquivos
-- SQL para consultas, investigaÃ§Ã£o de registros e validaÃ§Ã£o de dados
-- MySQL e PostgreSQL para anÃ¡lise e apoio a processos financeiros
-- React, Next.js, TypeScript e Tailwind CSS para interfaces web modernas
-- Git, GitHub, Vercel, VS Code, pgAdmin e DataGrip
-- Leitura, padronizaÃ§Ã£o e validaÃ§Ã£o de arquivos financeiros
-- Dashboards, indicadores e visualizaÃ§Ã£o de dados operacionais
+EXPERIÊNCIA PROFISSIONAL
+Conciflex | Maringá - PR
 
-ExperiÃªncia aplicada
-- AnÃ¡lise de dados financeiros e identificaÃ§Ã£o de inconsistÃªncias
-- Consultas SQL para validaÃ§Ã£o de registros, pagamentos e movimentaÃ§Ãµes
-- Tratamento de arquivos, layouts e informaÃ§Ãµes semi-estruturadas
-- AutomaÃ§Ã£o de rotinas operacionais com foco em reduÃ§Ã£o de retrabalho
-- DiagnÃ³stico tÃ©cnico orientado a dados e regras de negÃ³cio
-- OrganizaÃ§Ã£o de documentaÃ§Ã£o tÃ©cnica e melhoria contÃ­nua de processos
-- IntegraÃ§Ã£o entre dados, regras e interfaces para uso operacional
+Desenvolvedor Júnior | abr 2026 - jun 2026
+- Desenvolvimento e manutenção de rotinas em Python para leitura e processamento de arquivos estruturados.
+- Extração, tratamento, validação e padronização de dados financeiros, com apoio à conciliação e à rastreabilidade.
+- Consultas SQL para validar registros, identificar inconsistências e apoiar regras de negócio.
+- Documentação de fluxos e colaboração com suporte e áreas de negócio na análise de incidentes.
 
-Projetos pÃºblicos
+Analista de Suporte Pleno | abr 2025 - mar 2026
+- Atendimento e investigação de incidentes em sistemas, utilizando evidências, dados e consultas SQL.
+- Apoio a rotinas de conciliação financeira e validação de pagamentos, movimentações e registros.
+- Orientação a usuários, documentação de soluções e interface com a equipe de desenvolvimento.
 
-OFX Formatter â€” CorreÃ§Ã£o de Extratos Caixa
-AplicaÃ§Ã£o web para correÃ§Ã£o, padronizaÃ§Ã£o e exportaÃ§Ã£o de arquivos OFX, criada
-para facilitar o tratamento de extratos financeiros e reduzir erros de leitura em
-sistemas de anÃ¡lise ou conciliaÃ§Ã£o.
-Principais pontos: upload e validaÃ§Ã£o de arquivo OFX, correÃ§Ã£o de estrutura e
-tags, normalizaÃ§Ã£o de datas e timezone, processamento em memÃ³ria, download do
-arquivo corrigido e deploy na Vercel.
+Analista de Suporte Júnior | nov 2024 - mar 2025
+- Triagem e resolução de chamados, acesso remoto, coleta de evidências e escalonamento técnico.
+
+Analista de Suporte - Estágio | jul 2024 - out 2024
+- Suporte inicial a usuários sob supervisão, registro de atendimentos e uso de ferramentas de acesso remoto.
+
+PROJETOS SELECIONADOS
+OFX Formatter | Next.js, React, TypeScript, Tailwind CSS
+Aplicação web que valida, corrige, padroniza e exporta arquivos OFX da Caixa, reduzindo falhas de leitura em rotinas financeiras.
 Demo: https://site-extratos-ofx.vercel.app
-CÃ³digo: https://github.com/Samuel-Yuiti-SY/Ofx-Formatter
+Código: https://github.com/Samuel-Yuiti-SY/Ofx-Formatter
 
-CarbonTrack â€” Emissions Intelligence Dashboard
-Dashboard web para visualizaÃ§Ã£o de emissÃµes de CO2, frota, indicadores
-ambientais e relatÃ³rios gerenciais, simulando uma plataforma SaaS para
-acompanhamento de metas sustentÃ¡veis.
-Principais pontos: KPIs, visualizaÃ§Ã£o de emissÃµes, gestÃ£o simulada de frota,
-relatÃ³rios ambientais, interface responsiva e tema claro/escuro.
+CarbonTrack | Python, Flask, Next.js, PostgreSQL
+Dashboard para acompanhamento de emissões, frota e indicadores ambientais, com interface responsiva e relatórios gerenciais.
 Demo: https://carbontrack-v2-theta.vercel.app
-CÃ³digo: https://github.com/Samuel-Yuiti-SY/CarbonTrack
+Código: https://github.com/Samuel-Yuiti-SY/CarbonTrack
 
-FormaÃ§Ã£o
-AnÃ¡lise e Desenvolvimento de Sistemas â€” em andamento
+GameDex | Next.js, TypeScript, Prisma, PostgreSQL, JWT
+Aplicação full-stack para catálogo de jogos, autenticação, favoritos, importação de dados e painel administrativo.
+Demo: https://site-umber-six-63.vercel.app
 
-Objetivo
-Atuar em projetos de desenvolvimento Python, SQL, automaÃ§Ã£o, anÃ¡lise de dados,
-tratamento de arquivos, dashboards e aplicaÃ§Ãµes web que resolvam problemas
-operacionais reais.
+TECNOLOGIAS
+Linguagens: Python, Java (iniciante), JavaScript, TypeScript e SQL.
+Dados e backend: MySQL, PostgreSQL, Flask, Prisma e API Routes.
+Frontend e ferramentas: React, Next.js, Tailwind CSS, Git, GitHub, Vercel, pgAdmin, DataGrip e VS Code.
+
+FORMAÇÃO
+Análise e Desenvolvimento de Sistemas - Em andamento
