@@ -6,6 +6,7 @@ import { MagneticButton } from "@/components/common/MagneticButton";
 import { SectionHeader } from "@/components/common/SectionHeader";
 import { Container } from "@/components/layout/Container";
 import { useLanguage } from "@/hooks/useLanguage";
+import { RESUME_FILENAME, RESUME_URL } from "@/lib/resume";
 
 export function Contact() {
   const { t } = useLanguage();
@@ -55,8 +56,8 @@ export function Contact() {
                 {t.actions.linkedin}
               </MagneticButton>
               <MagneticButton
-                href="/api/curriculo"
-                download="Curriculo_Samuel_Yuiti_Desenvolvedor.pdf"
+                href={RESUME_URL}
+                download={RESUME_FILENAME}
                 icon={<Download size={17} />}
               >
                 {t.actions.downloadResume}

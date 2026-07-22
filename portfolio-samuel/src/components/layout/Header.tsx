@@ -7,6 +7,7 @@ import { MagneticButton } from "@/components/common/MagneticButton";
 import { ThemeToggle } from "@/components/common/ThemeToggle";
 import { Container } from "@/components/layout/Container";
 import { useLanguage } from "@/hooks/useLanguage";
+import { RESUME_FILENAME, RESUME_URL } from "@/lib/resume";
 import { cn } from "@/lib/utils";
 
 export function Header() {
@@ -55,8 +56,8 @@ export function Header() {
           <LanguageToggle compact />
           <ThemeToggle />
           <MagneticButton
-            href="/api/curriculo"
-            download="Curriculo_Samuel_Yuiti_Desenvolvedor.pdf"
+            href={RESUME_URL}
+            download={RESUME_FILENAME}
             variant="primary"
             icon={<Download size={17} />}
             className="min-h-11 px-4"
@@ -96,6 +97,16 @@ export function Header() {
             <div className="flex flex-wrap gap-2 pt-3">
               <LanguageToggle />
               <ThemeToggle label="Theme" />
+              <MagneticButton
+                href={RESUME_URL}
+                download={RESUME_FILENAME}
+                variant="primary"
+                icon={<Download size={17} />}
+                onClick={() => setOpen(false)}
+                className="min-h-11 px-4"
+              >
+                CV
+              </MagneticButton>
             </div>
           </Container>
         </div>
