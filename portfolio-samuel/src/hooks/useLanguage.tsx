@@ -2,10 +2,11 @@
 
 import {
   createContext,
+  useCallback,
   useContext,
   useEffect,
   useMemo,
-  useState,
+  useSyncExternalStore,
   type ReactNode,
 } from "react";
 import { en } from "@/messages/en";
@@ -14,6 +15,8 @@ import { pt } from "@/messages/pt";
 export type Language = "pt" | "en";
 
 const dictionaries = { pt, en };
+const LANGUAGE_STORAGE_KEY = "portfolio-language";
+const LANGUAGE_CHANGE_EVENT = "portfolio-language-change";
 
 type LanguageContextValue = {
   language: Language;
@@ -24,32 +27,52 @@ type LanguageContextValue = {
 
 const LanguageContext = createContext<LanguageContextValue | null>(null);
 
-function getInitialLanguage(): Language {
-  if (typeof window === "undefined") {
-    return "pt";
-  }
+function getStoredLanguage(): Language {
+  if (typeof window === "undefined") return "pt";
 
-  const stored = window.localStorage.getItem("portfolio-language");
+  const stored = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
   return stored === "pt" || stored === "en" ? stored : "pt";
 }
 
+function subscribeToLanguageChanges(onStoreChange: () => void) {
+  window.addEventListener("storage", onStoreChange);
+  window.addEventListener(LANGUAGE_CHANGE_EVENT, onStoreChange);
+
+  return () => {
+    window.removeEventListener("storage", onStoreChange);
+    window.removeEventListener(LANGUAGE_CHANGE_EVENT, onStoreChange);
+  };
+}
+
+function getServerLanguage(): Language {
+  return "pt";
+}
+
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguageState] = useState<Language>(getInitialLanguage);
+  const language = useSyncExternalStore<Language>(
+    subscribeToLanguageChanges,
+    getStoredLanguage,
+    getServerLanguage,
+  );
 
   useEffect(() => {
     document.documentElement.lang = language === "pt" ? "pt-BR" : "en";
-    window.localStorage.setItem("portfolio-language", language);
   }, [language]);
+
+  const setLanguage = useCallback((nextLanguage: Language) => {
+    window.localStorage.setItem(LANGUAGE_STORAGE_KEY, nextLanguage);
+    window.dispatchEvent(new Event(LANGUAGE_CHANGE_EVENT));
+  }, []);
 
   const value = useMemo(
     () => ({
       language,
-      setLanguage: setLanguageState,
+      setLanguage,
       toggleLanguage: () =>
-        setLanguageState((current) => (current === "pt" ? "en" : "pt")),
+        setLanguage(language === "pt" ? "en" : "pt"),
       t: dictionaries[language],
     }),
-    [language],
+    [language, setLanguage],
   );
 
   return (
