@@ -55,8 +55,9 @@ export function Contact() {
                 {t.actions.linkedin}
               </MagneticButton>
               <MagneticButton
-                href="/resume-samuel-yuiti.pdf"
-                download
+                href="/resume-samuel-yuiti.html"
+                target="_blank"
+                rel="noreferrer"
                 icon={<Download size={17} />}
               >
                 {t.actions.downloadResume}
