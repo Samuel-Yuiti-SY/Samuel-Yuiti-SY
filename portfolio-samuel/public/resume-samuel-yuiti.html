@@ -1,367 +1,133 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
-    <title>CurrÃ­culo Samuel Yuiti Endo Silva</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Currículo - Samuel Yuiti Endo Silva</title>
     <style>
-      @page {
-        size: A4;
-        margin: 12mm;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
+      @page { size: A4; margin: 13mm 15mm; }
+      * { box-sizing: border-box; }
       body {
         margin: 0;
-        color: #111827;
-        background: #ffffff;
-        font-family:
-          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-          "Segoe UI", sans-serif;
-        font-size: 10.4px;
-        line-height: 1.42;
+        color: #1f2937;
+        background: #fff;
+        font-family: Arial, "Liberation Sans", sans-serif;
+        font-size: 10.5px;
+        line-height: 1.35;
       }
-
-      .page {
-        min-height: 100vh;
-      }
-
-      header {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        gap: 18px;
-        padding-bottom: 14px;
-        border-bottom: 2px solid #0f766e;
-      }
-
-      h1 {
-        margin: 0;
-        color: #0f172a;
-        font-size: 27px;
-        line-height: 1;
-        letter-spacing: -0.02em;
-      }
-
-      .role {
-        margin-top: 7px;
-        color: #0f766e;
-        font-size: 13px;
-        font-weight: 800;
-      }
-
-      .contact {
-        display: grid;
-        gap: 3px;
-        color: #334155;
-        font-size: 9.5px;
-        text-align: right;
-        white-space: nowrap;
-      }
-
-      .contact a,
-      .project a {
-        color: #0f766e;
-        text-decoration: none;
-      }
-
-      main {
-        display: grid;
-        grid-template-columns: 0.72fr 1.28fr;
-        gap: 18px;
-        margin-top: 14px;
-      }
-
-      aside,
-      .content {
-        display: grid;
-        gap: 12px;
-        align-content: start;
-      }
-
-      section {
-        break-inside: avoid;
-      }
-
+      a { color: #0f766e; text-decoration: none; }
+      header { text-align: center; border-bottom: 2px solid #0f766e; padding-bottom: 8px; }
+      h1 { margin: 0; color: #17324d; font-size: 25px; line-height: 1.05; }
+      .role { margin: 5px 0 4px; color: #0f766e; font-size: 13px; font-weight: 700; }
+      .contact { color: #475569; font-size: 9.5px; }
+      section { margin-top: 10px; break-inside: avoid; }
       h2 {
-        margin: 0 0 6px;
-        color: #0f172a;
-        font-size: 11px;
-        letter-spacing: 0.08em;
+        margin: 0 0 5px;
+        color: #17324d;
+        font-size: 11.5px;
+        letter-spacing: .03em;
         text-transform: uppercase;
+        border-bottom: 1px solid #0f766e;
+        padding-bottom: 2px;
       }
-
-      p {
-        margin: 0;
-      }
-
-      ul {
-        display: grid;
-        gap: 4px;
-        margin: 0;
-        padding-left: 15px;
-      }
-
-      li::marker {
-        color: #0f766e;
-      }
-
-      .card {
-        padding: 11px;
-        border: 1px solid #dbe4ea;
-        border-radius: 10px;
-        background: #f8fafc;
-      }
-
-      .summary {
-        color: #334155;
-        font-size: 10.8px;
-      }
-
-      .chips {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 5px;
-      }
-
-      .chip {
-        padding: 4px 7px;
-        border: 1px solid #cbd5e1;
-        border-radius: 999px;
-        background: #ffffff;
-        color: #0f172a;
-        font-size: 9px;
-        font-weight: 700;
-      }
-
-      .project {
-        padding: 12px;
-        border: 1px solid #dbe4ea;
-        border-radius: 12px;
-        background: linear-gradient(135deg, #ffffff, #f8fafc);
-      }
-
-      .project + .project {
-        margin-top: 9px;
-      }
-
-      .project h3 {
-        margin: 0;
-        color: #0f172a;
-        font-size: 13px;
-      }
-
-      .project .meta {
-        margin-top: 4px;
-        color: #0f766e;
-        font-size: 9.3px;
-        font-weight: 800;
-      }
-
-      .project p {
-        margin-top: 7px;
-      }
-
-      .links {
-        display: grid;
-        gap: 2px;
-        margin-top: 7px;
-        color: #334155;
-        font-size: 9.3px;
-      }
-
-      .muted {
-        color: #475569;
-      }
-
-      .strong {
-        font-weight: 800;
-      }
-
-      footer {
-        margin-top: 12px;
-        padding-top: 8px;
-        border-top: 1px solid #dbe4ea;
-        color: #64748b;
-        font-size: 8.8px;
-      }
+      p { margin: 0; }
+      .company { margin-top: 4px; font-size: 12px; font-weight: 700; color: #17324d; }
+      .company span { font-size: 10px; font-weight: 400; color: #475569; }
+      .position { margin-top: 3px; font-size: 10.8px; font-weight: 700; }
+      .position span { font-size: 9.8px; font-weight: 400; color: #475569; }
+      ul { margin: 3px 0 0 17px; padding: 0; }
+      li { margin: 1.5px 0; }
+      .project { margin-top: 5px; }
+      .project-title { font-weight: 700; font-size: 10.8px; }
+      .stack { color: #0f766e; font-weight: 700; }
+      .links { margin-top: 2px; font-size: 9.5px; }
+      .skills-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 18px; }
+      .skills-grid strong { color: #17324d; }
+      footer { margin-top: 8px; color: #64748b; font-size: 8px; text-align: center; }
     </style>
   </head>
   <body>
-    <div class="page">
-      <header>
+    <header>
+      <h1>Samuel Yuiti Endo Silva</h1>
+      <div class="role">Desenvolvedor Backend Júnior | Python | SQL | Java em formação</div>
+      <div class="contact">
+        Maringá - PR | <a href="mailto:samuelyuit@gmail.com">samuelyuit@gmail.com</a> |
+        <a href="https://www.linkedin.com/in/samuelyuiti/">LinkedIn</a> |
+        <a href="https://github.com/Samuel-Yuiti-SY">GitHub</a> |
+        <a href="https://samuel-yuiti-portfolio.vercel.app">Portfólio</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Resumo profissional</h2>
+      <p>
+        Desenvolvedor backend com experiência profissional em Python, leitura e processamento de arquivos estruturados,
+        validação de dados e suporte a sistemas financeiros. Evolução interna de estágio a Analista de Suporte Pleno e,
+        posteriormente, Desenvolvedor Júnior na Conciflex. Conhecimento em SQL, MySQL/PostgreSQL, automação e investigação
+        de inconsistências. Cursando Análise e Desenvolvimento de Sistemas e aprofundando conhecimentos em Java.
+      </p>
+    </section>
+
+    <section>
+      <h2>Experiência profissional</h2>
+      <div class="company">Conciflex <span>| Maringá - PR</span></div>
+
+      <div class="position">Desenvolvedor Júnior <span>| abr 2026 - jun 2026</span></div>
+      <ul>
+        <li>Desenvolvimento e manutenção de rotinas em Python para leitura e processamento de arquivos estruturados.</li>
+        <li>Extração, tratamento, validação e padronização de dados financeiros, com apoio à conciliação e à rastreabilidade.</li>
+        <li>Consultas SQL para validar registros, identificar inconsistências e apoiar regras de negócio.</li>
+        <li>Documentação de fluxos e colaboração com suporte e áreas de negócio na análise de incidentes.</li>
+      </ul>
+
+      <div class="position">Analista de Suporte Pleno <span>| abr 2025 - mar 2026</span></div>
+      <ul>
+        <li>Atendimento e investigação de incidentes em sistemas, utilizando evidências, dados e consultas SQL.</li>
+        <li>Apoio a rotinas de conciliação financeira e validação de pagamentos, movimentações e registros.</li>
+        <li>Orientação a usuários, documentação de soluções e interface com a equipe de desenvolvimento.</li>
+      </ul>
+
+      <div class="position">Analista de Suporte Júnior <span>| nov 2024 - mar 2025</span></div>
+      <ul><li>Triagem e resolução de chamados, acesso remoto, coleta de evidências e escalonamento técnico.</li></ul>
+
+      <div class="position">Analista de Suporte - Estágio <span>| jul 2024 - out 2024</span></div>
+      <ul><li>Suporte inicial a usuários sob supervisão, registro de atendimentos e uso de ferramentas de acesso remoto.</li></ul>
+    </section>
+
+    <section>
+      <h2>Projetos selecionados</h2>
+      <div class="project">
+        <div class="project-title">OFX Formatter <span class="stack">| Next.js, React, TypeScript, Tailwind CSS</span></div>
+        <p>Aplicação web que valida, corrige, padroniza e exporta arquivos OFX da Caixa, reduzindo falhas de leitura em rotinas financeiras.</p>
+        <div class="links"><a href="https://site-extratos-ofx.vercel.app">Demo</a> | <a href="https://github.com/Samuel-Yuiti-SY/Ofx-Formatter">Código</a></div>
+      </div>
+      <div class="project">
+        <div class="project-title">CarbonTrack <span class="stack">| Python, Flask, Next.js, PostgreSQL</span></div>
+        <p>Dashboard para acompanhamento de emissões, frota e indicadores ambientais, com interface responsiva e relatórios gerenciais.</p>
+        <div class="links"><a href="https://carbontrack-v2-theta.vercel.app">Demo</a> | <a href="https://github.com/Samuel-Yuiti-SY/CarbonTrack">Código</a></div>
+      </div>
+      <div class="project">
+        <div class="project-title">GameDex <span class="stack">| Next.js, TypeScript, Prisma, PostgreSQL, JWT</span></div>
+        <p>Aplicação full-stack para catálogo de jogos, autenticação, favoritos, importação de dados e painel administrativo.</p>
+        <div class="links"><a href="https://site-umber-six-63.vercel.app">Demo</a></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Tecnologias e formação</h2>
+      <div class="skills-grid">
         <div>
-          <h1>Samuel Yuiti Endo Silva</h1>
-          <p class="role">
-            Desenvolvedor Python | SQL | Dados Financeiros | AutomaÃ§Ã£o
-          </p>
+          <p><strong>Linguagens:</strong> Python, Java (iniciante), JavaScript, TypeScript e SQL.</p>
+          <p><strong>Dados e backend:</strong> MySQL, PostgreSQL, Flask, Prisma e API Routes.</p>
+          <p><strong>Frontend e ferramentas:</strong> React, Next.js, Tailwind CSS, Git, GitHub, Vercel, pgAdmin, DataGrip e VS Code.</p>
         </div>
-        <div class="contact">
-          <span>samuelyuit@gmail.com</span>
-          <a href="https://www.linkedin.com/in/samuelyuiti/"
-            >linkedin.com/in/samuelyuiti</a
-          >
-          <a href="https://github.com/Samuel-Yuiti-SY"
-            >github.com/Samuel-Yuiti-SY</a
-          >
-          <a href="https://samuel-yuiti-portfolio.vercel.app"
-            >samuel-yuiti-portfolio.vercel.app</a
-          >
+        <div>
+          <p><strong>Análise e Desenvolvimento de Sistemas</strong></p>
+          <p>Em andamento</p>
         </div>
-      </header>
+      </div>
+    </section>
 
-      <main>
-        <aside>
-          <section class="card">
-            <h2>Resumo</h2>
-            <p class="summary">
-              Desenvolvedor com foco em Python, SQL, anÃ¡lise de dados
-              financeiros, automaÃ§Ã£o de processos, tratamento de arquivos e
-              construÃ§Ã£o de soluÃ§Ãµes web. AtuaÃ§Ã£o voltada para investigar
-              inconsistÃªncias, validar registros e transformar rotinas manuais
-              em fluxos mais claros, rastreÃ¡veis e confiÃ¡veis.
-            </p>
-          </section>
-
-          <section class="card">
-            <h2>Stack</h2>
-            <div class="chips">
-              <span class="chip">Python</span>
-              <span class="chip">SQL</span>
-              <span class="chip">MySQL</span>
-              <span class="chip">PostgreSQL</span>
-              <span class="chip">JavaScript</span>
-              <span class="chip">TypeScript</span>
-              <span class="chip">React</span>
-              <span class="chip">Next.js</span>
-              <span class="chip">Tailwind CSS</span>
-              <span class="chip">Git</span>
-              <span class="chip">GitHub</span>
-              <span class="chip">Vercel</span>
-              <span class="chip">pgAdmin</span>
-              <span class="chip">DataGrip</span>
-              <span class="chip">VS Code</span>
-            </div>
-          </section>
-
-          <section class="card">
-            <h2>CompetÃªncias</h2>
-            <ul>
-              <li>AutomaÃ§Ã£o, scripts e validaÃ§Ãµes com Python</li>
-              <li>Consultas SQL e validaÃ§Ã£o de registros</li>
-              <li>Tratamento e padronizaÃ§Ã£o de arquivos financeiros</li>
-              <li>Dashboards e interfaces web responsivas</li>
-              <li>DiagnÃ³stico tÃ©cnico orientado a dados</li>
-              <li>DocumentaÃ§Ã£o tÃ©cnica e melhoria contÃ­nua</li>
-            </ul>
-          </section>
-
-          <section class="card">
-            <h2>FormaÃ§Ã£o</h2>
-            <p>
-              <span class="strong">AnÃ¡lise e Desenvolvimento de Sistemas</span
-              ><br />
-              <span class="muted">Em andamento</span>
-            </p>
-          </section>
-        </aside>
-
-        <div class="content">
-          <section>
-            <h2>ExperiÃªncia aplicada</h2>
-            <div class="card">
-              <ul>
-                <li>
-                  AnÃ¡lise de dados financeiros e identificaÃ§Ã£o de
-                  inconsistÃªncias operacionais.
-                </li>
-                <li>
-                  Consultas SQL para validaÃ§Ã£o de registros, pagamentos,
-                  movimentaÃ§Ãµes e regras de negÃ³cio.
-                </li>
-                <li>
-                  Tratamento de arquivos, layouts e informaÃ§Ãµes
-                  semi-estruturadas para uso em processos financeiros.
-                </li>
-                <li>
-                  AutomaÃ§Ã£o de rotinas operacionais com foco em reduÃ§Ã£o de
-                  retrabalho, padronizaÃ§Ã£o e rastreabilidade.
-                </li>
-                <li>
-                  IntegraÃ§Ã£o entre dados, regras e interfaces para transformar
-                  processos tÃ©cnicos em ferramentas utilizÃ¡veis.
-                </li>
-              </ul>
-            </div>
-          </section>
-
-          <section>
-            <h2>Projetos pÃºblicos</h2>
-
-            <article class="project">
-              <h3>OFX Formatter â€” CorreÃ§Ã£o de Extratos Caixa</h3>
-              <p class="meta">Next.js Â· React Â· TypeScript Â· Tailwind CSS Â· Vercel</p>
-              <p>
-                AplicaÃ§Ã£o web para correÃ§Ã£o, padronizaÃ§Ã£o e exportaÃ§Ã£o de
-                arquivos OFX, criada para facilitar o tratamento de extratos
-                financeiros e reduzir erros de leitura em sistemas de anÃ¡lise
-                ou conciliaÃ§Ã£o.
-              </p>
-              <ul>
-                <li>Upload e validaÃ§Ã£o de arquivo OFX.</li>
-                <li>CorreÃ§Ã£o de estrutura, tags, datas e timezone.</li>
-                <li>Processamento em memÃ³ria e download do arquivo corrigido.</li>
-              </ul>
-              <div class="links">
-                <span>Demo: https://site-extratos-ofx.vercel.app</span>
-                <span
-                  >CÃ³digo:
-                  https://github.com/Samuel-Yuiti-SY/Ofx-Formatter</span
-                >
-              </div>
-            </article>
-
-            <article class="project">
-              <h3>CarbonTrack â€” Emissions Intelligence Dashboard</h3>
-              <p class="meta">
-                Python Â· Flask Â· Next.js Â· React Â· TypeScript Â· Tailwind CSS
-              </p>
-              <p>
-                Dashboard web para visualizaÃ§Ã£o de emissÃµes de CO2, frota,
-                indicadores ambientais e relatÃ³rios gerenciais, simulando uma
-                plataforma SaaS para acompanhamento de metas sustentÃ¡veis.
-              </p>
-              <ul>
-                <li>Dashboard com KPIs e visualizaÃ§Ã£o de emissÃµes.</li>
-                <li>GestÃ£o simulada de frota e relatÃ³rios ambientais.</li>
-                <li>Interface responsiva com tema claro e escuro.</li>
-              </ul>
-              <div class="links">
-                <span>Demo: https://carbontrack-v2-theta.vercel.app</span>
-                <span
-                  >CÃ³digo:
-                  https://github.com/Samuel-Yuiti-SY/CarbonTrack</span
-                >
-              </div>
-            </article>
-          </section>
-
-          <section class="card">
-            <h2>Objetivo</h2>
-            <p>
-              Atuar em projetos de desenvolvimento Python, SQL, automaÃ§Ã£o,
-              anÃ¡lise de dados, tratamento de arquivos, dashboards e aplicaÃ§Ãµes
-              web que resolvam problemas operacionais reais.
-            </p>
-          </section>
-        </div>
-      </main>
-
-      <footer>
-        CurrÃ­culo gerado a partir de informaÃ§Ãµes pÃºblicas e projetos do
-        portfÃ³lio. Dados privados ou sensÃ­veis nÃ£o foram incluÃ­dos.
-      </footer>
-    </div>
+    <footer>Currículo atualizado em julho de 2026.</footer>
   </body>
 </html>
