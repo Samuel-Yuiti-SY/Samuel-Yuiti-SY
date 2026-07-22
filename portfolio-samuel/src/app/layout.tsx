@@ -3,7 +3,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { AppProviders } from "@/components/providers/AppProviders";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
+
+const siteUrl = new URL(SITE_URL);
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,14 +19,26 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: siteUrl,
   title: "Samuel Yuiti Endo Silva | Python, SQL and Financial Data",
   description:
     "Professional portfolio of Samuel Yuiti Endo Silva, focused on Python, SQL, financial data analysis, automation, file processing, and web solutions.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Samuel Yuiti Endo Silva | Developer Portfolio",
     description:
       "Python, SQL, financial data analysis, automation, file processing, and modern web interfaces.",
+    url: "/",
+    siteName: "Samuel Yuiti Portfolio",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Samuel Yuiti Endo Silva | Developer Portfolio",
+    description:
+      "Python, SQL, financial data analysis, automation, file processing, and modern web interfaces.",
   },
 };
 

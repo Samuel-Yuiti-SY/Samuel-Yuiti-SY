@@ -1,3 +1,5 @@
+import { RESUME_FILENAME } from "@/lib/resume";
+
 export const runtime = "nodejs";
 
 const PAGE_WIDTH = 595;
@@ -59,6 +61,12 @@ function toBytes(binary: string): Uint8Array {
     bytes[index] = binary.charCodeAt(index) & 0xff;
   }
   return bytes;
+}
+
+function toArrayBuffer(bytes: Uint8Array): ArrayBuffer {
+  const buffer = new ArrayBuffer(bytes.byteLength);
+  new Uint8Array(buffer).set(bytes);
+  return buffer;
 }
 
 function wrapText(value: string, maximumCharacters: number): string[] {
@@ -302,10 +310,10 @@ function buildPdf(): Uint8Array {
 export async function GET() {
   const pdf = buildPdf();
 
-  return new Response(pdf, {
+  return new Response(toArrayBuffer(pdf), {
     headers: {
       "Content-Type": "application/pdf",
-      "Content-Disposition": 'attachment; filename="Curriculo_Samuel_Yuiti_Desenvolvedor.pdf"',
+      "Content-Disposition": `attachment; filename="${RESUME_FILENAME}"`,
       "Cache-Control": "public, max-age=3600, s-maxage=3600",
       "X-Content-Type-Options": "nosniff",
     },

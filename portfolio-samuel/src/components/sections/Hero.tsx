@@ -16,6 +16,7 @@ import { Container } from "@/components/layout/Container";
 import { ScrollLayers } from "@/components/effects/ScrollLayers";
 import { useLanguage } from "@/hooks/useLanguage";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import { RESUME_FILENAME, RESUME_URL } from "@/lib/resume";
 
 export function Hero() {
   const { t } = useLanguage();
@@ -97,8 +98,8 @@ export function Hero() {
               {t.actions.viewProjects}
             </MagneticButton>
             <MagneticButton
-              href="/api/curriculo"
-              download="Curriculo_Samuel_Yuiti_Desenvolvedor.pdf"
+              href={RESUME_URL}
+              download={RESUME_FILENAME}
               icon={<Download size={18} />}
             >
               {t.actions.downloadResume}

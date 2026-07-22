@@ -69,6 +69,7 @@ Também é possível importar o repositório no painel da Vercel e manter as con
 ```text
 src/
   app/
+    api/curriculo/route.ts -> Curriculo_Samuel_Yuiti_Desenvolvedor.pdf
   components/
     common/
     effects/
@@ -81,7 +82,6 @@ src/
   messages/
 public/
   images/
-  resume-samuel-yuiti.pdf
 ```
 
 ## Próximos ajustes
