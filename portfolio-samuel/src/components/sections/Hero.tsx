@@ -13,7 +13,7 @@ export function Hero() {
     <section id="top" className={styles.hero}>
       <Container>
         <div className={styles.introLine}>
-          <p>Samuel Yuiti Endo Silva</p>
+          <p>samuel-yuiti / README.md</p>
           <span>
             {language === "pt"
               ? "Desenvolvimento · Dados · Automação"
@@ -75,7 +75,8 @@ export function Hero() {
           <figure className={styles.portrait}>
             <div className={styles.photoFrame}>
               <Image
-                src="/images/samuel-profile-2026-07.png"
+                src="/images/samuel-terno.webp"
+                unoptimized
                 alt={t.hero.profileAlt}
                 width={520}
                 height={640}
@@ -85,8 +86,8 @@ export function Hero() {
               />
             </div>
             <figcaption>
-              <span>01 / {language === "pt" ? "PERFIL" : "PROFILE"}</span>
-              <p>{t.hero.photoCaption}</p>
+              <span>Samuel Yuiti</span>
+              <p>Maringá, PR</p>
             </figcaption>
           </figure>
         </div>

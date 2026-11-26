@@ -10,6 +10,7 @@ import { useLanguage } from "@/hooks/useLanguage";
 import { cn } from "@/lib/utils";
 
 const accents = [
+  { id: "terminal", label: "Terminal", rgb: "112 228 198", solid: "#70e4c6" },
   { id: "sand", label: "Areia", rgb: "206 177 123", solid: "#ceb17b" },
   { id: "blue", label: "Azul", rgb: "59 130 246", solid: "#3b82f6" },
   { id: "green", label: "Verde", rgb: "34 197 94", solid: "#22c55e" },
@@ -19,8 +20,8 @@ const accents = [
 export function VisualPlayground() {
   const { language, t } = useLanguage();
   const [accent, setAccent] = useState(() => {
-    if (typeof window === "undefined") return "sand";
-    return window.localStorage.getItem("portfolio-accent") ?? "sand";
+    if (typeof window === "undefined") return "terminal";
+    return window.localStorage.getItem("portfolio-accent") ?? "terminal";
   });
   const [motion, setMotion] = useState(() => {
     if (typeof window === "undefined") return "on";
