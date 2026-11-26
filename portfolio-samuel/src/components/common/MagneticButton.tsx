@@ -12,8 +12,7 @@ type MagneticButtonProps = Omit<HTMLMotionProps<"a">, "children"> & {
 };
 
 const variants = {
-  primary:
-    "accent-bg text-slate-950 shadow-[0_18px_60px_rgba(var(--accent),0.22)] hover:shadow-[0_22px_80px_rgba(var(--accent),0.28)]",
+  primary: "accent-bg text-slate-950 ",
   secondary:
     "border border-white/10 bg-white/10 text-white backdrop-blur hover:bg-white/10 light-border light-card light-text",
   ghost:
@@ -53,7 +52,7 @@ export function MagneticButton({
         onMouseLeave?.(event);
       }}
       className={cn(
-        "inline-flex min-h-12 items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-bold transition duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[rgb(var(--accent))]",
+        "inline-flex min-h-12 items-center justify-center gap-2 rounded-md px-5 py-3 text-sm font-bold transition duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[rgb(var(--accent))]",
         variants[variant],
         className,
       )}

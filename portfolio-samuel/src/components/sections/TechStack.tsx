@@ -5,7 +5,6 @@ import { AnimatedCard } from "@/components/common/AnimatedCard";
 import { Badge } from "@/components/common/Badge";
 import { SectionHeader } from "@/components/common/SectionHeader";
 import { Marquee } from "@/components/effects/Marquee";
-import { ParallaxText } from "@/components/effects/ParallaxText";
 import { Container } from "@/components/layout/Container";
 import { techStack } from "@/data/skills";
 import { useLanguage } from "@/hooks/useLanguage";
@@ -86,8 +85,6 @@ export function TechStack() {
           </div>
         </div>
       </Container>
-
-      <ParallaxText>PYTHON SQL AUTOMATION DATA</ParallaxText>
     </section>
   );
 }

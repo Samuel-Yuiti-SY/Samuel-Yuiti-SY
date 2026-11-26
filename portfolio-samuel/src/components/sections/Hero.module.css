@@ -1,0 +1,265 @@
+.hero {
+  padding: 116px 0 0;
+  background: var(--background);
+  color: var(--foreground);
+}
+.introLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--portfolio-border);
+  padding-bottom: 22px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--portfolio-muted);
+  gap: 24px;
+}
+.introLine p {
+  margin: 0;
+}
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 96px;
+  align-items: center;
+  padding: 56px 0;
+}
+.status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--portfolio-muted);
+  margin: 0 0 28px;
+}
+.status > span {
+  width: 7px;
+  height: 7px;
+  background: rgb(var(--accent));
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.copy h1 {
+  font-size: clamp(68px, 7.9vw, 116px);
+  font-weight: 500;
+  letter-spacing: -7px;
+  line-height: 0.94;
+  margin: 0 0 30px;
+}
+.copy h1 > span {
+  color: var(--portfolio-accent-text, rgb(var(--accent)));
+}
+.role {
+  font-size: 23px;
+  line-height: 1.45;
+  letter-spacing: -0.5px;
+  max-width: 520px;
+  margin: 0 0 18px;
+}
+.description {
+  font-size: 14px;
+  line-height: 1.9;
+  max-width: 470px;
+  color: var(--portfolio-muted);
+  margin: 0;
+}
+.actions {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.actions a {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.primary {
+  background: rgb(var(--accent));
+  color: #13191b;
+  padding: 14px 22px;
+  border-radius: 3px;
+}
+.primary:hover {
+  filter: brightness(0.92);
+}
+.secondary {
+  color: var(--foreground);
+  border-bottom: 1px solid var(--portfolio-border);
+}
+.socials {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  font-size: 12px;
+  color: var(--portfolio-muted);
+}
+.socials a {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+  text-decoration: none;
+}
+.socials a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.portrait {
+  margin: 0;
+  width: 100%;
+  max-width: 420px;
+  justify-self: end;
+}
+.photoFrame {
+  background: var(--portfolio-panel);
+  border: 1px solid var(--portfolio-border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  object-position: center 12%;
+}
+.portrait figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 16px;
+  font-size: 10px;
+  line-height: 1.7;
+  color: var(--portfolio-muted);
+}
+.portrait figcaption > span {
+  white-space: nowrap;
+  letter-spacing: 1px;
+}
+.portrait figcaption p {
+  margin: 0;
+  text-align: right;
+  max-width: 230px;
+}
+.skills {
+  border-block: 1px solid var(--portfolio-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 24px 0;
+}
+.skills > p {
+  margin: 0;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: var(--portfolio-muted);
+}
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 12px;
+}
+.skills > a {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+}
+@media (max-width: 1023px) {
+  .heroGrid {
+    gap: 40px;
+  }
+  .copy h1 {
+    font-size: 88px;
+    letter-spacing: -5px;
+  }
+  .role {
+    font-size: 20px;
+  }
+  .skills ul {
+    gap: 16px;
+  }
+  .introLine {
+    font-size: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .hero {
+    padding-top: 108px;
+  }
+  .introLine {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 20px;
+  }
+  .heroGrid {
+    grid-template-columns: 1fr;
+    padding: 32px 0;
+    gap: 36px;
+  }
+  .copy h1 {
+    font-size: 86px;
+    letter-spacing: -5px;
+  }
+  .status {
+    margin-bottom: 24px;
+  }
+  .role {
+    font-size: 21px;
+    max-width: 450px;
+  }
+  .description {
+    font-size: 14px;
+  }
+  .portrait {
+    justify-self: start;
+    max-width: 420px;
+  }
+  .photo {
+    aspect-ratio: 1/1;
+    object-position: center 15%;
+  }
+  .skills {
+    gap: 18px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .skills ul {
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+    min-width: 170px;
+  }
+  .skills > a {
+    display: none;
+  }
+  .socials {
+    gap: 18px;
+  }
+  .actions {
+    gap: 20px;
+  }
+  .portrait figcaption {
+    gap: 16px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .primary {
+    transition: none;
+  }
+}

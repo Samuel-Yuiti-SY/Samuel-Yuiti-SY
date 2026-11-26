@@ -3,10 +3,20 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --accent: 34 211 238;
-  --accent-solid: #22d3ee;
-  --background: #020617;
-  --foreground: #f8fafc;
+  --accent: 206 177 123;
+  --accent-solid: #ceb17b;
+  --background: #15191b;
+  --foreground: #f2f1ea;
+  --portfolio-panel: #1c2225;
+  --portfolio-border: #394347;
+  --portfolio-muted: #bdc5c4;
+}
+.light {
+  --background: #f7f6f0;
+  --foreground: #202a2c;
+  --portfolio-panel: #fffefa;
+  --portfolio-border: #cbd3cc;
+  --portfolio-muted: #52615d;
 }
 
 @theme inline {
@@ -37,7 +47,7 @@ body {
 }
 
 .section-space {
-  padding-block: 7rem;
+  padding-block: 5rem;
 }
 
 .grid-bg {
@@ -237,4 +247,82 @@ body {
   .section-space {
     padding-block: 5rem;
   }
+}
+
+/* Shared surfaces follow the same solid palette in both themes. */
+html {
+  scroll-padding-top: 100px;
+}
+body,
+.light body {
+  background: var(--background);
+  color: var(--foreground);
+}
+.glass-card,
+.light .glass-card,
+.light .light-card {
+  background: var(--portfolio-panel);
+  border-color: var(--portfolio-border);
+  box-shadow: none;
+  backdrop-filter: none;
+  border-radius: 6px;
+}
+.grid-bg,
+.light .grid-bg {
+  background-image: none;
+}
+.light-header,
+.light .light-header {
+  background: var(--background);
+  border-color: var(--portfolio-border);
+  backdrop-filter: none;
+}
+.light .light-inner-panel {
+  background: var(--portfolio-panel);
+  border-color: var(--portfolio-border);
+}
+.input-field,
+.light .input-field {
+  background: var(--portfolio-panel);
+  color: var(--foreground);
+  border-color: var(--portfolio-border);
+  border-radius: 5px;
+}
+.input-field::placeholder,
+.light .input-field::placeholder {
+  color: var(--portfolio-muted);
+}
+.light .light-text {
+  color: var(--foreground);
+}
+.light .light-text-muted {
+  color: var(--portfolio-muted);
+}
+:focus-visible {
+  outline: 2px solid rgb(var(--accent));
+  outline-offset: 5px;
+}
+::selection {
+  background: rgb(var(--accent));
+  color: #15191b;
+}
+.portfolio-skip {
+  position: fixed;
+  z-index: 100;
+  top: -100px;
+  left: 20px;
+  background: var(--foreground);
+  color: var(--background);
+  padding: 12px 16px;
+}
+.portfolio-skip:focus {
+  top: 12px;
+}
+
+.light .text-\[rgb\(var\(--accent\)\)\] {
+  color: #755724;
+}
+
+.light {
+  --portfolio-accent-text: #755724;
 }
