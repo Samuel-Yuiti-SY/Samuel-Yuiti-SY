@@ -10,6 +10,7 @@ import { useLanguage } from "@/hooks/useLanguage";
 import { cn } from "@/lib/utils";
 
 const accents = [
+  { id: "sand", label: "Areia", rgb: "206 177 123", solid: "#ceb17b" },
   { id: "blue", label: "Azul", rgb: "59 130 246", solid: "#3b82f6" },
   { id: "green", label: "Verde", rgb: "34 197 94", solid: "#22c55e" },
   { id: "cyan", label: "Ciano", rgb: "34 211 238", solid: "#22d3ee" },
@@ -18,8 +19,8 @@ const accents = [
 export function VisualPlayground() {
   const { language, t } = useLanguage();
   const [accent, setAccent] = useState(() => {
-    if (typeof window === "undefined") return "cyan";
-    return window.localStorage.getItem("portfolio-accent") ?? "cyan";
+    if (typeof window === "undefined") return "sand";
+    return window.localStorage.getItem("portfolio-accent") ?? "sand";
   });
   const [motion, setMotion] = useState(() => {
     if (typeof window === "undefined") return "on";
@@ -31,7 +32,7 @@ export function VisualPlayground() {
   });
 
   useEffect(() => {
-    const selected = accents.find((item) => item.id === accent) ?? accents[2];
+    const selected = accents.find((item) => item.id === accent) ?? accents[0];
     document.documentElement.style.setProperty("--accent", selected.rgb);
     document.documentElement.style.setProperty(
       "--accent-solid",

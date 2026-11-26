@@ -26,6 +26,9 @@ export function Header() {
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50 border-b border-white/10 bg-slate-950/75 backdrop-blur-xl light-header">
+      <a className="portfolio-skip" href="#main-content">
+        {t.nav.home}
+      </a>
       <Container className="flex min-h-20 items-center justify-between gap-4">
         <a
           href="#top"
@@ -69,6 +72,8 @@ export function Header() {
         <button
           type="button"
           aria-label="Toggle navigation"
+          aria-expanded={open}
+          aria-controls="portfolio-mobile-nav"
           onClick={() => setOpen((current) => !current)}
           className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/10 text-white light-border light-card light-text lg:hidden"
         >
@@ -77,6 +82,8 @@ export function Header() {
       </Container>
 
       <div
+        id="portfolio-mobile-nav"
+        inert={!open}
         className={cn(
           "grid border-t border-white/10 bg-slate-950/95 transition-all duration-300 light-header lg:hidden",
           open ? "grid-rows-[1fr]" : "grid-rows-[0fr]",

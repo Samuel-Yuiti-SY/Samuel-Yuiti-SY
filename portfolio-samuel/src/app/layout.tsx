@@ -56,7 +56,7 @@ export default function RootLayout({
       <body className="min-h-screen overflow-x-hidden bg-slate-950 font-sans">
         <AppProviders>
           <Header />
-          <main>{children}</main>
+          <main id="main-content">{children}</main>
           <Footer />
         </AppProviders>
       </body>
