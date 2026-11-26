@@ -33,8 +33,8 @@ export function Hero() {
             </h1>
             <p className={styles.role}>
               {language === "pt"
-                ? "Python, SQL e aplicações web para resolver problemas de dados."
-                : "Python, SQL and web applications to solve data problems."}
+                ? "Desenvolvedor de aplicações web com Python e SQL."
+                : "Web application developer working with Python and SQL."}
             </p>
             <p className={styles.description}>{t.hero.subtitle}</p>
             <div className={styles.actions}>
@@ -75,7 +75,7 @@ export function Hero() {
           <figure className={styles.portrait}>
             <div className={styles.photoFrame}>
               <Image
-                src="/images/samuel-terno.webp"
+                src="/images/samuel-retrato.webp"
                 unoptimized
                 alt={t.hero.profileAlt}
                 width={520}
