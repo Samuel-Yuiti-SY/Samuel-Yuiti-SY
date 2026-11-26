@@ -263,3 +263,62 @@
     transition: none;
   }
 }
+
+.hero {
+  background-color: var(--background);
+  background-image: radial-gradient(
+    var(--portfolio-border) 0.7px,
+    transparent 0.9px
+  );
+  background-size: 24px 24px;
+}
+.introLine,
+.status,
+.socials,
+.portrait figcaption,
+.skills,
+.primary,
+.secondary {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+}
+.introLine {
+  text-transform: none;
+  background: var(--portfolio-panel);
+  padding: 13px 18px;
+  border: 1px solid var(--portfolio-border);
+  border-left: 3px solid rgb(var(--accent));
+}
+.introLine p {
+  color: var(--foreground);
+}
+.copy h1 {
+  font-weight: 650;
+  letter-spacing: -0.068em;
+}
+.portrait {
+  max-width: 355px;
+  padding: 8px;
+  border: 1px solid var(--portfolio-border);
+  background: var(--portfolio-panel);
+}
+.photoFrame {
+  border: 0;
+}
+.portrait figcaption {
+  padding: 12px 6px 5px;
+  align-items: center;
+}
+.skills {
+  background: var(--background);
+}
+@media (max-width: 767px) {
+  .heroGrid {
+    gap: 24px;
+  }
+  .portrait {
+    max-width: 285px;
+  }
+  .photo {
+    aspect-ratio: 4/5;
+  }
+}

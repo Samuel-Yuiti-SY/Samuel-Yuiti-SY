@@ -3,16 +3,16 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --accent: 206 177 123;
-  --accent-solid: #ceb17b;
-  --background: #15191b;
+  --accent: 112 228 198;
+  --accent-solid: #70e4c6;
+  --background: #0c1019;
   --foreground: #f2f1ea;
-  --portfolio-panel: #1c2225;
-  --portfolio-border: #394347;
+  --portfolio-panel: #131b27;
+  --portfolio-border: #354359;
   --portfolio-muted: #bdc5c4;
 }
 .light {
-  --background: #f7f6f0;
+  --background: #f5f8fc;
   --foreground: #202a2c;
   --portfolio-panel: #fffefa;
   --portfolio-border: #cbd3cc;
@@ -304,7 +304,7 @@ body,
 }
 ::selection {
   background: rgb(var(--accent));
-  color: #15191b;
+  color: #0c1019;
 }
 .portfolio-skip {
   position: fixed;
@@ -320,9 +320,11 @@ body,
 }
 
 .light .text-\[rgb\(var\(--accent\)\)\] {
-  color: #755724;
+  color: #00615b;
 }
 
 .light {
-  --portfolio-accent-text: #755724;
+  --portfolio-accent-text: #00615b;
 }
+
+@font-face { font-family: "IBM Plex Mono"; src: url("/fonts/ibm-plex-mono.woff2") format("woff2"); font-weight: 400; font-display: swap; }
