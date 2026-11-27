@@ -75,7 +75,7 @@ export function Hero() {
           <figure className={styles.portrait}>
             <div className={styles.photoFrame}>
               <Image
-                src="/images/samuel-retrato.webp"
+                src="/images/samuel-original.webp"
                 unoptimized
                 alt={t.hero.profileAlt}
                 width={520}

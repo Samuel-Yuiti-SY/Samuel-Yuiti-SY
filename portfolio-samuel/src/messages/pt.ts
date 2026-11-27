@@ -26,7 +26,7 @@ export const pt = {
       "Desenvolvo soluções com Python, SQL e tecnologia web para transformar dados financeiros em processos mais claros, rápidos e confiáveis.",
     subtitle:
       "Atuo com análise de dados, automação, tratamento de arquivos, consultas SQL e desenvolvimento de interfaces modernas para resolver problemas operacionais reais.",
-    profileAlt: "Foto profissional de Samuel Yuiti Endo Silva",
+    profileAlt: "Samuel Yuiti em uma fotografia pessoal",
     photoCaption: "Python, SQL, automação e dados financeiros",
     pipelineLabel: "Pipeline de solução",
     pipeline: [
