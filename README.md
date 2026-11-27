@@ -78,3 +78,5 @@ Meu site pessoal, com versão em português e inglês, tema claro/escuro, currí
 - LinkedIn: https://www.linkedin.com/in/samuelyuiti/
 - GitHub: https://github.com/Samuel-Yuiti-SY
 - E-mail: samuelyuit@gmail.com
+
+As regras de interface e acessibilidade estão no [guia de design](portfolio-samuel/DESIGN.md).

@@ -322,3 +322,7 @@
     aspect-ratio: 4/5;
   }
 }
+
+.portrait { max-width: 295px; }
+.photo { aspect-ratio: 1; object-position: center; }
+@media (max-width: 767px) { .portrait { max-width: 220px; } }
